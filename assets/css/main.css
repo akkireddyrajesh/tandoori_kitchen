@@ -1,0 +1,9 @@
+
+.tandoori_body{background-image:url('../images/bg.png') ;}
+
+/* Header */
+.header{background-image:url('../images/home_bg.png') ;}
+.header-logo-block{z-index:1;}
+
+/* Footer */
+.footer{background-color: black;}
