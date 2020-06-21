@@ -19,7 +19,9 @@
     margin: 20px 0 50px 0;
     max-width: 800px;
 }
-
+.bg-fix{  background-attachment: fixed !important; }
+.text-gold{ color: goldenrod;}
+.text-darkgoldenrod{color: darkgoldenrod !important;}
 /* Parallax */
 body, html {
     height: 100%;
@@ -132,10 +134,8 @@ body, html {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
@@ -191,3 +191,10 @@ body, html {
 /* ============= <Footer> =================== */
 .footer{background-color: black;}
 /* ============= </Footer> =================== */
+
+/* Contact */
+/* #contact{background-image:url('../images/bg.png') ;} */
+#contact .header{background-image:url('../images/contact/contact_bg.jpg') ;   }
+.contactus_form_box{
+  background-color: #fffffd;
+}
