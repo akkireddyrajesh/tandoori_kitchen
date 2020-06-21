@@ -1,4 +1,4 @@
-# tandoori_kitchen
+# TANDOORI KITCHEN
 Tandoori kitchen
 
 ## versions release
