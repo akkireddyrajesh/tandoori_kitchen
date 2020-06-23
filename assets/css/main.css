@@ -19,28 +19,31 @@
     margin: 20px 0 50px 0;
     max-width: 800px;
 }
+
+
+/* color list */
+.bg_palegoldenrod{background-color: palegoldenrod !important;}
 .bg-fix{  background-attachment: fixed !important; }
 .text-gold{ color: goldenrod;}
 .text-darkgoldenrod{color: darkgoldenrod !important;}
+.btn_goldenrod{background: goldenrod;border-color: navajowhite;}
+
+
 /* Parallax */
-body, html {
-    height: 100%;
-  }
-  
-  .parallax {
+body, html {height: 100%;}
+.parallax {
     /* The image used */
     background-image: url("../images/bg.png");
     /* Full height */
     height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
+    /* background-position: center;  */
+    background-repeat:repeat;
     /* background-size: cover; */
-  }
+}
 
 /* ============= <Menu> =================== */
-/* Menu */
 #menuToggle
 {
   display: block;
@@ -130,7 +133,6 @@ body, html {
   top: -6vh;
   right: -6vw;
   height: 100vh;
-  /* background: #ededed; */
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -192,9 +194,27 @@ body, html {
 .footer{background-color: black;}
 /* ============= </Footer> =================== */
 
-/* Contact */
-/* #contact{background-image:url('../images/bg.png') ;} */
-#contact .header{background-image:url('../images/contact/contact_bg.jpg') ;   }
-.contactus_form_box{
+/* ============= <Contactus> =================== */
+#contact .header{background-image:url('../images/contactus/contactus_bg.png') ;   }
+.box{
   background-color: #fffffd;
 }
+.card form{
+  color: goldenrod;
+}
+.card form > .btn_submit_form{
+  background: goldenrod;
+  border-color: navajowhite;
+  color:whitesmoke ;
+}
+
+/* ============= </Contactus> =================== */
+
+/* ============= <Takeaway> =================== */
+
+#takeaway .header{background-image:url('../images/takeaway/takeaway_bg.jpg') ;   }
+.body .nav-tabs li a{
+  color: goldenrod;
+  background-color: palegoldenrod !important;
+}
+/* ============= </Takeaway> =================== */
