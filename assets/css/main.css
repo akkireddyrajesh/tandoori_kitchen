@@ -16,7 +16,7 @@
 .p {
     font-family: 'Heebo', sans-serif;
     color: #999;
-    margin: 20px 0 50px 0;
+    /* margin: 20px 0 50px 0; */
     max-width: 800px;
 }
 
@@ -217,4 +217,16 @@ body, html {height: 100%;}
   color: goldenrod;
   background-color: palegoldenrod !important;
 }
+.price{
+  float: right;
+  color: darkgoldenrod;
+  font-weight: bold;
+}
+.tab_content_body_block h3 {border-bottom: 2px solid red; }
+/* .tab_content_body_block p:nth-child(even) {color: red;font-weight: bold;} */
+
+
+
+
+
 /* ============= </Takeaway> =================== */
