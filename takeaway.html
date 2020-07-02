@@ -2,6 +2,37 @@
 <html lang="en">
 
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#myInput2").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV2 *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#myInput3").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV3 *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -72,9 +103,20 @@
                   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 					  <div class="tab_content_head_block text-center pt-3">
 						<h2>Nordstan Take Away Meny</h2>
-						<p>GÖTEBORGSVÄGEN 9, <br/>431 30 MÖLNDAL</p>
-						<p>Ring 031-27 27 26 <i>eller</i></p>
 					  </div>
+					  <div align="center">GÖTEBORGSVÄGEN 9,<br
+                        class="mobilebreakspace">431 30 MÖLNDAL
+                    </div>
+                    <div align="center">Ring 031-27 27 26 <i>eller
+                      </i><br class="mobilebreakspace"><a href="#"
+                        target="_blank">beställ takeaway
+                        online...</a></div>
+						<br>
+				<center>
+					  <input id="myInput" type="text" placeholder="sökmeny...">
+</center>
+<br>
+<div id="myDIV">
                         <div class="tab_content_body_block elementor-text-editor elementor-clearfix">
 																													<h3 class=""><strong>Starters
 																														</strong>
@@ -842,7 +884,8 @@
 																														och
 																														kardemumma.
 																													</p>
-                    </div>                    
+                    </div>
+					</div>
                   </div>
                   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <div align="center">
@@ -855,6 +898,12 @@
                       </i><br class="mobilebreakspace"><a href="#"
                         target="_blank">beställ takeaway
                         online...</a></div>
+						<br>
+				<center>
+					  <input id="myInput2" type="text" placeholder="sökmeny...">
+</center>
+<br>
+<div id="myDIV2">
                         <div
 																													class="elementor-text-editor elementor-clearfix">
 																													<h3 ><strong>Starters
@@ -1413,6 +1462,7 @@ potatis, koriander och speciella kryddor.
 																													<p class="p"> Yoghurt dryck med smak av mango och kardemumma
 																													</p>
 																												</div>
+																												</div>
                   </div>
                   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                     <div align="center">
@@ -1425,6 +1475,12 @@ potatis, koriander och speciella kryddor.
                       </i><br class="mobilebreakspace"><a href="#"
                         target="_blank">beställ takeaway
                         online...</a></div>
+						<br>
+				<center>
+					  <input id="myInput3" type="text" placeholder="sökmeny...">
+</center>
+<br>
+<div id="myDIV3">
                     <div class="elementor-text-editor elementor-clearfix">
                       <h3><strong>Starters
                         </strong>
@@ -2148,6 +2204,7 @@ potatis, koriander och speciella kryddor.
                         kardemumma.
                       </p>
                     </div>
+					</div>
                   </div>
                 </div>
               </div>
