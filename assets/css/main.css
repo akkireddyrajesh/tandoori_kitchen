@@ -49,7 +49,14 @@ body, html {height: 100%;}
   padding: 1em;
   /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
 }
-
+.btn_orederOnline{
+  background-color: (45deg, black, transparent);
+  border-color: navajowhite;
+}
+.btn_active{
+  /* background-color: (45deg, darkgoldenrod, transparent) !important; */
+  background-color:darkgoldenrod !important;
+}
 /* ============= </Menu> =================== */
 
 /* ============= </Header> =================== */
