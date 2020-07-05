@@ -22,30 +22,37 @@
 <body class="tandoori_body">
   <div class="container-fluid parallax position-relative">
 
-    <nav data-section="menu" class="navbar row justify-content-between navbar-expand-lg navbar-dark bg-dark m-0">
-      <a class="navbar-brand col-2" href="#"><img class="img-responsive " src="assets/images/logo.jpeg" height="100px" width="100px" alt="tandoori logo" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav data-section="menu" class="navbar row justify-content-between navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand col-2" href="#"><img class="img-responsive " src="assets/images/logo.png" height="100px"
+          width="100px" alt="tandoori logo" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse col-10 justify-content-end navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav menu_ul justify-content-around">
-          <li class="nav-item btn  btn_active"><a href="./index.html"   class="text-light">Hem</a></li>
-          <li class="nav-item btn " ><a href="./indisk_mattradition.html" class="text-light">Indisk Mattradition</a></li>
-          <li class="nav-item btn " ><a href="./lunch.html"    class="text-light">Lunch</a></li>
-          <li class="nav-item btn " ><a href="./alacarte.html" class="text-light">Alacarte</a></li>
-          <li class="nav-item btn " ><a href="./catering.html" class="text-light">Catering</a></li>
-          <li class="nav-item btn " ><a href="./takeaway.html" class="text-light">Takeaway</a></li>
-          <li class="nav-item btn " ><a href="./contactus.html"class="text-light">Contact Us</a></li>
-          <li class="nav-item btn btn_orederOnline" ><a href="./order_online.html"class="text-light">Order Online</a></li>
+          <li data-url="index.html" class="nav-item btn"><a href="./index.html" class="text-light">Hem</a>
+          </li>
+          <li data-url="indisk_mattradition.html" class="nav-item btn "><a href="./indisk_mattradition.html"
+              class="text-light">Indisk Mattradition</a></li>
+          <li data-url="lunch.html" class="nav-item btn "><a href="./lunch.html" class="text-light">Lunch</a></li>
+          <li data-url="alacarte.html" class="nav-item btn "><a href="./alacarte.html" class="text-light">Alacarte</a>
+          </li>
+          <li data-url="catering.html" class="nav-item btn "><a href="./catering.html" class="text-light">Catering</a>
+          </li>
+          <li data-url="takeaway.html" class="nav-item btn "><a href="./takeaway.html" class="text-light">Takeaway</a>
+          </li>
+          <li data-url="contactus.html" class="nav-item btn "><a href="./contactus.html" class="text-light">Contact
+              Us</a></li>
+          <li data-url="order_online.html" class="nav-item btn btn_orederOnline"><a href="./order_online.html"
+              class="text-light">Order Online</a></li>
         </ul>
 
     </nav>
     <header class="row header ">
+      <div class="col py-5 my-2"></div>
       <div class="col-12 text-center"><img src="./assets/images/logo.png"
           class="img img-responsive py-4 wow animate__animated animate__flip" alt="Responsive image"></div>
-      <!-- <div class="col-12 text-center">
-        <h2 class="text-light py-2">We add spice to your life...</h2>
-      </div> -->
     </header>
 
     <!-- Main Section -->
@@ -112,19 +119,23 @@
 
           <div class="col-12">
             <div class="row justify-content-between text-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d60895.09083715486!2d78.37106367057345!3d17.4624335865124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d17.4123487!2d78.4080456!4m5!1s0x3bcb8dfe6fbebdff%3A0x2ad4429c8a6b8477!2ssunshine%20creative%20labs!3m2!1d17.5200866!2d78.3821952!5e0!3m2!1sen!2sin!4v1593869459155!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d60895.09083715486!2d78.37106367057345!3d17.4624335865124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d17.4123487!2d78.4080456!4m5!1s0x3bcb8dfe6fbebdff%3A0x2ad4429c8a6b8477!2ssunshine%20creative%20labs!3m2!1d17.5200866!2d78.3821952!5e0!3m2!1sen!2sin!4v1593869459155!5m2!1sen!2sin"
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
           </div>
         </div>
-      </div>
         <!-- Testomonials -->
-        <div class="row testmonials py-5 justify-content-md-center text-left">
+        <!-- <div class="row testmonials py-5 justify-content-md-center text-left">
           <div class="col-12 col-md-6 bg-light">
             <div class="row p-5 testmonial_box">
               <div class="col ">
                 <img src="./assets/images/testimonial.png" class="img-responsive rounded-circle" height="90px" alt="" />
                 <h1 class="h1"> RAJESH</h1>
                 <span class="span">OneMoney </span>
-                <p class="p my-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laboriosam reprehenderit
+                <p class="p my-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi laboriosam
+                  reprehenderit
                   temporibus ut
                   aliquam
                   repellat, tempora inventore nisi, ipsum enim dicta quia dolor, cum molestias, numquam cumque qui
@@ -144,7 +155,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </main>
@@ -194,4 +205,5 @@
     new WOW().init();
   </script>
 </body>
+
 </html>
