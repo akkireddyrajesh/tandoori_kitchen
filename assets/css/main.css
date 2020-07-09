@@ -72,6 +72,7 @@ body, html {height: 100%;}
 
 .header{background-image:url('../images/home_bg.jpg') ;}
 .header-logo-block{z-index:1;}
+
 /* ============= </Header> =================== */
 
 /* ============= <Main> =================== */
@@ -106,7 +107,14 @@ body, html {height: 100%;}
 /* ============= </Footer> =================== */
 
 /* ============= <Contactus> =================== */
-#contact .header{background-image:url('../images/contactus/contactus_bg.png') ;   }
+#contact .header{background-image:url('../images/contactus/contactus.jpg') ; 
+
+ 
+  padding: 1px;
+  background: url('../images/contactus/contactus.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 .box{
   background-color: #fffffd;
 }
@@ -120,6 +128,46 @@ body, html {height: 100%;}
 }
 
 /* ============= </Contactus> =================== */
+
+/* ============= <Lunch> =================== */
+
+#Lunch .header{background-image:url('../images/lunch.jpg') ;   }
+.body .nav-tabs li a{
+  color: goldenrod;
+  background-color: palegoldenrod !important;
+}
+.price{
+  float: right;
+  color: darkgoldenrod;
+  font-weight: bold;
+}
+
+/* ============= </Lunch> =================== */
+
+
+/* ============= <alacarte> =================== */
+
+#Alacarte .header{background-image:url('../images/alacarte.jpg') ;}
+
+
+/* ============= </alacarte> =================== */
+
+
+
+/* ============= <catering> =================== */
+
+#catering .header{background-image:url('../images/catering.jpg') ;}
+
+
+/* ============= </catering> =================== */
+
+
+/* ============= <Order_online> =================== */
+
+#Order_online .header{background-image:url('../images/lunch.jpg') ;}
+
+
+/* ============= </Order_online> =================== */
 
 /* ============= <Takeaway> =================== */
 
