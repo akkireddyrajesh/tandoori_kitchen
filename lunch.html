@@ -85,7 +85,7 @@ $(document).ready(function(){
 
         <!-- Contact Us  -->
         <div class="row contact_box py-5 justify-content-md-center text-left bg-fix">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-8">
             <div class="row p-5 box">
               <div class="col">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -102,8 +102,122 @@ $(document).ready(function(){
                       aria-controls="contact" aria-selected="false">KUNGSGATAN</a>
                   </li>
                 </ul>
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content  py-5" id="myTabContent">
                   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+					<div class="col " id="accordion_01">
+						<div class="card">
+						  <div class="card-header bg_palegoldenrod" id="headingOne">
+							<h5 class="mb-0">
+							  <button class="btn btn-link text-dark font-weight-bold" data-toggle="collapse"
+								data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								EVEN MONTH
+							  </button>
+							</h5>
+						  </div>
+						  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion_01">
+							<div class="card-body">
+
+								<div class="tab_content_body_block elementor-text-editor elementor-clearfix">
+									<h3 class=""><strong>Måndag:
+										</strong>
+									</h3>
+									<p >1A.
+										ChickenVindaloo(stark)
+										<span
+											class="price">45 SEK</span>
+									</p>
+									<p class="p">Kycklingfilé tillagat med paprika, nordindiska kryddor, cocosmjölk och rödvin
+									</p>
+									<p>2A.
+										 Lamb Saag
+										<span
+											class="price">45 SEK</span>
+									</p>
+									<p class="p">Lammkött i spenat med färsk rostade kryddor,grön chili och tomater.
+									</p>
+								</div>
+
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header bg_palegoldenrod" id="headingTwo">
+							<h5 class="mb-0">
+							  <button class="btn btn-link text-dark font-weight-bold collapsed" data-toggle="collapse"
+								data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								ODD MONTH
+							  </button>
+							</h5>
+						  </div>
+						  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion_01">
+							<div class="card-body">
+							  <form>
+								<div class="form-group">
+								  <label for="name">Name</label>
+								  <input type="text" class="form-control" id="name" placeholder="Name" required>
+								</div>
+								<div class="form-row">
+								  <div class="form-group col-md-6">
+									<label for="name">Email</label>
+									<input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+								  </div>
+								  <div class="form-group col-md-6">
+									<label for="telefon">Telefon</label>
+									<input type="tel" class="form-control" id="telefon" placeholder="Telefon">
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label for="inputState">RESTAURANTE</label>
+								  <select id="inputState" class="form-control">
+									<option selected>NORDSTAN</option>
+									<option>FRIGGAGATAN</option>
+									<option>KUNGSGATAN</option>
+								  </select>
+								</div>
+								<div class="form-row">
+								  <div class="form-group col-md-6">
+									<label for="date">Date</label>
+									<input type="date" class="form-control" id="inputEmail4" >
+								  </div>
+								  <div class="form-group col-md-6">
+									<label for="time">Time</label>
+									<input type="time" class="form-control" id="time" placeholder="11:00">
+								  </div>
+								</div>
+								<div class="form-group">
+								  <label for="inputAddress">Meddelande</label>
+								  <input type="text" class="form-control" id="inputAddress" placeholder="Meddelande">
+								</div>                          
+								<button type="submit" class="btn btn_submit_form text-uppercase radius-none">Skicka till Restaurangen</button>
+							  </form>
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header bg_palegoldenrod" id="headingThree">
+							<h5 class="mb-0">
+							  <button class="btn btn-link text-dark font-weight-bold collapsed" data-toggle="collapse" data-target="#collapseThree"
+								aria-expanded="false" aria-controls="collapseThree">
+								WEEK END MONTH
+							  </button>
+							</h5>
+						  </div>
+						  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion_01">
+							<div class="card-body">
+							  <h1 class="h1">Comming Soon...</h1>
+							</div>
+						  </div>
+						</div>               
+					  </div>
+
+
+
+
+
+
+
+
 					  <div class="tab_content_head_block text-center pt-3">
 						<h2>Nordstan Lunch Meny</h2>
 					  </div>
