@@ -116,7 +116,8 @@ body, html {height: 100%;}
 /* ============= </Footer> =================== */
 
 /* ============= <Contactus> =================== */
-#contact .header{background-image:url('../images/contactus/contactus_bg.png') ;   }
+#contact .header{background-image:url('../images/contactus/contactus_bg.png') ;
+height: 100%;   }
 .box{
   background-color: #fffffd;
 }
@@ -133,7 +134,8 @@ body, html {height: 100%;}
 
 /* ============= <Lunch> =================== */
 
-#Lunch .header{background-image:url('../images/lunch.jpg') ;   }
+#Lunch .header{background-image:url('../images/lunch.jpg') ;
+height: 100%;   }
 .body .nav-tabs li a{
   color: goldenrod;
   background-color: palegoldenrod !important;
@@ -149,7 +151,8 @@ body, html {height: 100%;}
 
 /* ============= <alacarte> =================== */
 
-#Alacarte .header{background-image:url('../images/alacarte.jpg') ;}
+#Alacarte .header{background-image:url('../images/alacarte.jpg') ;
+height: 100%; }
 
 
 /* ============= </alacarte> =================== */
@@ -158,7 +161,9 @@ body, html {height: 100%;}
 
 /* ============= <catering> =================== */
 
-#catering .header{background-image:url('../images/catering.jpg') ;}
+#catering .header{background-image:url('../images/catering.jpg') ;
+height: 100%;
+}
 
 
 /* ============= </catering> =================== */
@@ -166,14 +171,16 @@ body, html {height: 100%;}
 
 /* ============= <Order_online> =================== */
 
-#Order_online .header{background-image:url('../images/lunch.jpg') ;}
+#Order_online .header{background-image:url('../images/lunch.jpg') ;
+height: 100%; }
 
 
 /* ============= </Order_online> =================== */
 
 /* ============= <Takeaway> =================== */
 
-#takeaway .header{background-image:url('../images/takeaway/takeaway_bg.jpg') ;   }
+#takeaway .header{background-image:url('../images/takeaway/takeaway_bg.jpg') ;
+height: 100%;   }
 .body .nav-tabs li a{
   color: goldenrod;
   background-color: palegoldenrod !important;
