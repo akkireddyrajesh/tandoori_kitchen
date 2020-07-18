@@ -47,68 +47,74 @@ $(document).ready(function(){
 
   <!-- Scripts -->
   <script defer src="./assets/css/fontawesome-free-5.13.1-web/js/all.js"></script>
-  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="icon" href="./assets/images/logo.png" type="image/png">
 </head>
 <body id="Alacarte" class="tandoori_body body">
   <div class="container-fluid parallax position-relative">
 
     <nav data-section="menu" class="navbar row justify-content-between navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<a class="navbar-brand col-2" href="#"><img class="img-fluid " src="assets/images/logo.png" height="100px" width="100px" alt="tandoori logo" /></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<a class="navbar-brand col-2" href="#"><img class="img-fluid" src="assets/images/logo.png" height="100px"
+			width="100px" alt="tandoori logo" /></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse col-10 justify-content-end navbar-collapse " id="navbarSupportedContent">
 		  <ul class="navbar-nav menu_ul justify-content-around">
-			<li data-url="index.html" class="nav-item btn "><a href="./index.html"   class="text-light">Hem</a></li>
+			<li data-url="index.html" class="nav-item btn"><a href="./index.html" class="text-light">Hem</a>
+			</li>
 			
 			<li data-url="lunch.html" class="nav-item btn dropdown">
-            <a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Lunch
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item " href="./lunch.html">Nordstan</a>
-              <a class="dropdown-item" href="./lunch.html">Friggagatan</a>
-              <a class="dropdown-item" href="./lunch.html">Kungsgatan</a>
-            </div>
+			  <a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Lunch
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item " href="./lunch.html#nordstan">Nordstan</a>
+				<a class="dropdown-item" href="./lunch.html#friggagatan">Friggagatan</a>
+				<a class="dropdown-item" href="./lunch.html#kungsgatan">Kungsgatan</a>
+			  </div>
+			</li>
 			<li data-url="alacarte.html" class="nav-item btn dropdown">
-				<a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Alacarte
-				</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item " href="./alacarte.html">Nordstan</a>
-					<a class="dropdown-item" href="./alacarte.html">Friggagatan</a>
-					<a class="dropdown-item" href="./alacarte.html">Kungsgatan</a>
-				  </div>
-</li>
-<li data-url="takeaway.html" class="nav-item btn dropdown">
-	<a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		Takeaway
-	</a>
-	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		<a class="dropdown-item " href="./takeaway.html">Nordstan</a>
-		<a class="dropdown-item" href="./takeaway.html">Friggagatan</a>
-		<a class="dropdown-item" href="./takeaway.html">Kungsgatan</a>
-	  </div>
-</li>
-<li data-url="catering.html" class="nav-item btn dropdown">
-	<a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		Catering
-	</a>
-	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		<a class="dropdown-item " href="./catering.html">Nordstan</a>
-		<a class="dropdown-item" href="./catering.html">Friggagatan</a>
-		<a class="dropdown-item" href="./catering.html">Kungsgatan</a>
-	  </div>
-</li>
-			<li data-url="contactus.html" class="nav-item btn " ><a href="./contactus.html"class="text-light">Contact Us</a></li>
-			<li data-url="order_online.html" class="nav-item btn btn_orederOnline" ><a href="./order_online.html"class="text-light">Order Online/Home delivery</a></li>
+			  <a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Alacarte
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item " href="./alacarte.html#nordstan">Nordstan</a>
+				<a class="dropdown-item" href="./alacarte.html#friggagatan">Friggagatan</a>
+				<a class="dropdown-item" href="./alacarte.html#kungsgatan">Kungsgatan</a>
+			  </div>
+	  </li>
+	  <li data-url="takeaway.html" class="nav-item btn dropdown">
+		<a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  Takeaway
+		</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item " href="./takeaway.html#nordstan">Nordstan</a>
+		  <a class="dropdown-item" href="./takeaway.html#friggagatan">Friggagatan</a>
+		  <a class="dropdown-item" href="./takeaway.html#kungsgatan">Kungsgatan</a>
+		  </div>
+	  </li>
+	  <li data-url="catering.html" class="nav-item btn dropdown">
+		<a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  Catering
+		</a>
+		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		  <a class="dropdown-item " href="./catering.html#nordstan">Nordstan</a>
+		  <a class="dropdown-item" href="./catering.html#friggagatan">Friggagatan</a>
+		  <a class="dropdown-item" href="./catering.html#kungsgatan">Kungsgatan</a>
+		  </div>
+	  </li>
+			<li data-url="contactus.html" class="nav-item btn "><a href="./contactus.html" class="text-light">Contact
+				Us</a></li>
+			<li data-url="order_online.html" class="nav-item btn btn_orederOnline"><a href="./order_online.html"
+				class="text-light">Order Online/Home delivery</a></li>
 		  </ul>
   
 	  </nav>
     <header class="row header services_box">
-		<div class="col py-5 my-2"></div>
+		<div class="col py-5 my-md-2"></div>
 		
-      <div class="col-12 text-center">
+      <div class="col-12 py-md-5 my-md-5 my text-center">
         <h1 class="h1 text-light py-2 py-sm-4 text-uppercase"> ALACARTE</h1>
       </div>
     </header>
@@ -122,22 +128,22 @@ $(document).ready(function(){
           <div class="col-12 col-md-6">
             <div class="row p-5 box">
               <div class="col">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item ml-1">
-                    <a class="nav-link active text-uppercase" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                      aria-controls="home" aria-selected="true">Nordstan</a>
-                  </li>
-                  <li class="nav-item ml-1">
-                    <a class="nav-link text-uppercase" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                      aria-controls="profile" aria-selected="false">FRIGGAGATAN</a>
-                  </li>
-                  <li class="nav-item ml-1">
-                    <a class="nav-link text-uppercase" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                      aria-controls="contact" aria-selected="false">KUNGSGATAN</a>
-                  </li>
-                </ul>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item ml-1">
+					  <a class="nav-link active text-uppercase" id="nordstan-tab" data-toggle="tab" href="#nordstan" role="tab"
+						aria-controls="nordstan" aria-selected="true">Nordstan</a>
+					</li>
+					<li class="nav-item ml-1">
+					  <a class="nav-link text-uppercase" id="friggagatan-tab" data-toggle="tab" href="#friggagatan" role="tab"
+						aria-controls="friggagatan" aria-selected="false">FRIGGAGATAN</a>
+					</li>
+					<li class="nav-item ml-1">
+					  <a class="nav-link text-uppercase" id="kungsgatan-tab" data-toggle="tab" href="#kungsgatan" role="tab"
+						aria-controls="contact" aria-selected="false">KUNGSGATAN</a>
+					</li>
+				  </ul>
                 <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="tab-pane fade show active" id="nordstan" role="tabpanel" aria-labelledby="nordstan-tab">
 					  <center>
 						<h2>Nordstan Alacarte Meny</h2>
 					  </center>
@@ -909,7 +915,7 @@ $(document).ready(function(){
 						 Hemlagad färsk ost serverad i spenat, tomater grön chili och färsk koriander
 					  </div>
                   </div>
-                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="tab-pane fade" id="friggagatan" role="tabpanel" aria-labelledby="friggagatan-tab">
                     <div align="center">
                       <h2>Friggagatan Alacarte Meny</h2>
                     </div>
@@ -1680,7 +1686,7 @@ spices.
 																												   
 																													Hemlagad färsk ost serverad i spenat, tomater grön chili och färsk koriander
 																												 </div>																						</div>
-                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <div class="tab-pane fade" id="kungsgatan" role="tabpanel" aria-labelledby="kungsgatan-tab">
                     <div align="center">
                       <h2>Kungsgatan Alacarte Meny</h2>
                     </div>
