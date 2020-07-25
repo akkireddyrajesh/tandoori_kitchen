@@ -2,98 +2,103 @@
 <html lang="en">
 
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myDIV *").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $("#myInput2").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myDIV2 *").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $("#myInput3").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myDIV3 *").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Tandoori Kitchen || Takeaway</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#myInput").on("keyup", function () {
+				var value = $(this).val().toLowerCase();
+				$("#myDIV *").filter(function () {
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("#myInput2").on("keyup", function () {
+				var value = $(this).val().toLowerCase();
+				$("#myDIV2 *").filter(function () {
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("#myInput3").on("keyup", function () {
+				var value = $(this).val().toLowerCase();
+				$("#myDIV3 *").filter(function () {
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			});
+		});
+	</script>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Tandoori Kitchen || Takeaway</title>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <link rel="stylesheet" href="./assets/css/fontawesome-free-5.13.1-web/css/all.css" />
-  <link rel="stylesheet" href="./assets/css/main.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	<link rel="stylesheet" href="./assets/css/fontawesome-free-5.13.1-web/css/all.css" />
+	<link rel="stylesheet" href="./assets/css/main.css">
 
-  <!-- Scripts -->
-  <script defer src="./assets/css/fontawesome-free-5.13.1-web/js/all.js"></script>
-  <link rel="icon" href="./assets/images/logo.png" type="image/png">
+	<!-- Scripts -->
+	<script defer src="./assets/css/fontawesome-free-5.13.1-web/js/all.js"></script>
+	<link rel="icon" href="./assets/images/logo.png" type="image/png">
 </head>
+
 <body id="takeaway" class="tandoori_body body">
-  <div class="container-fluid parallax position-relative">
-    <nav data-section="menu" class="navbar row justify-content-between navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<a class="navbar-brand col-2" href="#"><img class="img-fluid" src="assets/images/logo.png" height="100px"
-			width="100px" alt="tandoori logo" /></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-		  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse col-10 justify-content-end navbar-collapse " id="navbarSupportedContent">
-		  <ul class="navbar-nav menu_ul justify-content-around">
-			<li data-url="index.html" class="nav-item btn"><a href="./index.html" class="text-light">Hem</a>
-			</li>
-			
-			<li data-url="lunch.html" class="nav-item btn dropdown">
-			  <a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Lunch
-			  </a>
-			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item " href="./lunch.html#nordstan">Nordstan</a>
-				<a class="dropdown-item" href="./lunch.html#friggagatan">Friggagatan</a>
-				<a class="dropdown-item" href="./lunch.html#kungsgatan">Kungsgatan</a>
-			  </div>
-			</li>
-			<li data-url="alacarte.html" class="nav-item btn dropdown">
-			  <a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Alacarte
-			  </a>
-			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item " href="./alacarte.html#nordstan">Nordstan</a>
-				<a class="dropdown-item" href="./alacarte.html#friggagatan">Friggagatan</a>
-				<a class="dropdown-item" href="./alacarte.html#kungsgatan">Kungsgatan</a>
-			  </div>
-	  </li>
-	  <li data-url="takeaway.html" class="nav-item btn dropdown">
-		<a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		  Takeaway
-		</a>
-		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		  <a class="dropdown-item " href="./takeaway.html#nordstan">Nordstan</a>
-		  <a class="dropdown-item" href="./takeaway.html#friggagatan">Friggagatan</a>
-		  <a class="dropdown-item" href="./takeaway.html#kungsgatan">Kungsgatan</a>
-		  </div>
-	  </li>
-	 <!---- <li data-url="catering.html" class="nav-item btn dropdown">
+	<div class="container-fluid parallax position-relative">
+		<nav data-section="menu"
+			class="navbar row justify-content-between navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<a class="navbar-brand col-2" href="#"><img class="img-fluid" src="assets/images/logo.png" height="100px"
+					width="100px" alt="tandoori logo" /></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse col-10 justify-content-end navbar-collapse " id="navbarSupportedContent">
+				<ul class="navbar-nav menu_ul justify-content-around">
+					<li data-url="index.html" class="nav-item btn"><a href="./index.html" class="text-light">Hem</a>
+					</li>
+
+					<li data-url="lunch.html" class="nav-item btn dropdown">
+						<a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Lunch
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item " href="./lunch.html#nordstan">Nordstan</a>
+							<a class="dropdown-item" href="./lunch.html#friggagatan">Friggagatan</a>
+							<a class="dropdown-item" href="./lunch.html#kungsgatan">Kungsgatan</a>
+						</div>
+					</li>
+					<li data-url="alacarte.html" class="nav-item btn dropdown">
+						<a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Alacarte
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item " href="./alacarte.html#nordstan">Nordstan</a>
+							<a class="dropdown-item" href="./alacarte.html#friggagatan">Friggagatan</a>
+							<a class="dropdown-item" href="./alacarte.html#kungsgatan">Kungsgatan</a>
+						</div>
+					</li>
+					<li data-url="takeaway.html" class="nav-item btn dropdown">
+						<a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Takeaway
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item " href="./takeaway.html#nordstan">Nordstan</a>
+							<a class="dropdown-item" href="./takeaway.html#friggagatan">Friggagatan</a>
+							<a class="dropdown-item" href="./takeaway.html#kungsgatan">Kungsgatan</a>
+						</div>
+					</li>
+					<!---- <li data-url="catering.html" class="nav-item btn dropdown">
 		<a class="text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		  Catering
 		</a>
@@ -103,2312 +108,2185 @@ $(document).ready(function(){
 		  <a class="dropdown-item" href="./catering.html#kungsgatan">Kungsgatan</a>
 		  </div>
 	  </li> --->
-			<li data-url="contactus.html" class="nav-item btn "><a href="./contactus.html" class="text-light">catering/Contact Us
-				</a></li><li data-url="gallery.html" class="nav-item btn "><a href="./gallery.html" class="text-light">gallery</a></li>
-			<li data-url="order_online.html" class="nav-item btn btn_orederOnline"><a href="./order_online.html"
-				class="text-light">Order Online/Home delivery</a></li>
-		  </ul>
-  
-	  </nav>
-    <header class="row header services_box">
-		<div class="col py-5 my-md-2"></div>
-		
-      <div class="col-12 py-md-5 my-md-5 my text-center">
-        <h1 class="h1 text-light py-sm-4 text-uppercase"> TAKEAWAY</h1>
-      </div>
-    </header>
+					<li data-url="contactus.html" class="nav-item btn "><a href="./contactus.html"
+							class="text-light">catering/Contact Us
+						</a></li>
+					<li data-url="gallery.html" class="nav-item btn "><a href="./gallery.html"
+							class="text-light">gallery</a></li>
+					<li data-url="order_online.html" class="nav-item btn btn_orederOnline"><a href="./order_online.html"
+							class="text-light">Order Online/Home delivery</a></li>
+				</ul>
 
-    <!-- Main Section -->
-    <main class="row main">
-      <div class="col-md-12">
+		</nav>
+		<header class="row header services_box">
+			<div class="col py-5 my-md-2"></div>
 
-        <!-- Contact Us  -->
-        <div class="row contact_box py-5 justify-content-md-center text-left bg-fix">
-          <div class="col-12 col-md-6">
-            <div class="row p-5 box">
-              <div class="col">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-					<li class="nav-item ml-1">
-					  <a class="nav-link active text-uppercase" id="nordstan-tab" data-toggle="tab" href="#nordstan" role="tab"
-						aria-controls="nordstan" aria-selected="true">Nordstan</a>
-					</li>
-					<li class="nav-item ml-1">
-					  <a class="nav-link text-uppercase" id="friggagatan-tab" data-toggle="tab" href="#friggagatan" role="tab"
-						aria-controls="friggagatan" aria-selected="false">FRIGGAGATAN</a>
-					</li>
-					<li class="nav-item ml-1">
-					  <a class="nav-link text-uppercase" id="kungsgatan-tab" data-toggle="tab" href="#kungsgatan" role="tab"
-						aria-controls="contact" aria-selected="false">KUNGSGATAN</a>
-					</li>
-				  </ul>
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="nordstan" role="tabpanel" aria-labelledby="nordstan-tab">
-					  <center><br>
-						<h2>Nordstan Take Away Meny</h2>
-					  </center>
-					  <div align="center">GÖTEBORGSVÄGEN 9,<br
-                        class="mobilebreakspace">431 30 MÖLNDAL
-                    </div>
-                    <div align="center">Ring 031-27 27 26 <i>eller
-                      </i><br class="mobilebreakspace"><a href="./order_online.html"
-					  >beställ takeaway
-					  online...</a></div>
-						
-					  <hr style="height:1px;border-width:0;color:black;background-color:black">
+			<div class="col-12 py-md-5 my-md-5 my text-center">
+				<h1 class="h1 text-light py-sm-4 text-uppercase"> TAKEAWAY</h1>
+			</div>
+		</header>
 
-					  <b>
-							<div align="center">Lunch 99 SEK inkl. Sallad, Nybakat nanbröd (95 SEK Vid Take away)<br
-							  class="mobilebreakspace">Extra nanbröd 10 SEK eller byt upp till Vitlöksnan för 19 SEK
-					  
-						  </div>
-						  <div align="center">Dricka (Flaska)19 SEK och Mangolassi 29 SEK
-							  <br class="mobilebreakspace">(Allt bröd är veganskt)
-						   </div></b>	
-						  <br> 
-				<center>
-					  <input id="myInput" type="text" placeholder="sökmeny...">
-</center>
-<br><br>
-<div id="myDIV">
-                        <div class="tab_content_body_block elementor-text-editor elementor-clearfix">
-																													<h3 class=""><strong>Starters
-																														</strong>
-																													</h3>
-																													<p >1A.
-																														Samosa
-																														(Veg)
-																														<span
-																															class="price">45 SEK</span>
-																													</p>
-																													<p class="p">Indisk
-																														pirog
-																														med
-																														vegetarisk
-																														fyllning.
-																														Serveras
-																														med
-																														chutney.
-																													</p>
-																													<p>2A.
-																														Bhrwan
-																														Murgh
-																														<span
-																															class="price">45 SEK</span>
-																													</p>
-																													<p class="p">Marinerad
-																														kycklingfilé
-																														fylld
-																														med
-																														champinjoner,
-																														svartpeppar
-																														och
-																														hemlagad
-																														ost.
-																														Serveras
-																														med
-																														chutney.
-																													</p>
-																													<p>3A.
-																														Hariyali
-																														Jhinga
-																														<span
-																															class="price">55 SEK</span>
-																													</p>
-																													<p class="p">Tigerräkor
-																														marinerade
-																														med
-																														gröna
-																														örter
-																														och
-																														grillad.
-																														Serveras
-																														med
-																														paprikamasala.
-																													</p>
-																													<p>4A.
-																														3st
-																														Papadum
-																														<span
-																															class="price">25 SEK</span>
-																													</p>
-																													<p class="p">Tunnbröd
-																														med
-																														kryddsmak.
-																													</p>
+		<!-- Main Section -->
+		<main class="row main">
+			<div class="col-md-12">
 
-																													<h3><strong>Tandoori
-																															Dishes
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>11A.
-																														Tandoori
-																														Chicken
-																														<span
-																															class="price">125 SEK</span>
-																													</p>
-																													<p class="p">Grillad
-																														Kyckling
-																														marinerad
-																														i
-																														Indiska
-																														kryddor.
-																														Serveras
-																														med
-																														tandoorisås.
-																													</p>
-																													<p>12A.
-																														Murg
-																														Zaffrani
-																														Tikka
-																														<span
-																															class="price">125 SEK</span>
-																													</p>
-																													<p class="p">Kycklingfilé
-																														marinerad
-																														med
-																														yoghurt,
-																														grädde,
-																														cashewnötter,
-																														saffran
-																														och
-																														garam
-																														masala.
-																														Serveras
-																														med
-																														Tandoorisås.
-																													</p>
-																													<p>13A.
-																														Chaplikebab
-																														<span
-																															class="price">55 SEK</span>
-																													</p>
-																													<p class="p">Lammfärsbiffar
-																														med
-																														ingefära,
-																														koriander,
-																														grön
-																														chili
-																														och
-																														mangorelish.
-																														Serveras
-																														med
-																														masalasås.
-																													</p>
-																													<p>14A.
-																														Boti
-																														Kebab
-																														<span
-																															class="price">125 SEK</span>
-																													</p>
-																													<p class="p">Nötbitar
-																														marinerade
-																														med
-																														rostade
-																														kryddor,
-																														chili,
-																														lime
-																														och
-																														vitlök.
-																														Serveras
-																														med
-																														masalasås.
-																													</p>
-																													<p>15A.
-																														Malai
-																														Jhinga
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p" >Tigerräkor
-																														marinerade
-																														i
-																														yoghurt,
-																														rosvatten
-																														och
-																														cashewnötter.
-																														Serveras
-																														med
-																														tandoorisås.
-																													</p>
-																													<p>16A.
-																														Paneer
-																														Tikka
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Marinerad
-																														hemlagad
-																														ost
-																														med
-																														indiska
-																														kryddor.
-																														Serveras
-																														med
-																														tandoorisås.
-																													</p>
-																													<h3><strong>Chicken
-																															Dishes
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>21A.
-																														Chicken
-																														Tikka
-																														Masala
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Kryddmarinerad
-																														och
-																														grillad
-																														kycklingfilé.
-																													</p>
-																													<p class="p">Serveras
-																														i
-																														mild
-																														kryddig
-																														sås.
-																													</p>
-																													<p>22A.
-																														Madras
-																														Murghi
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Sydindisk
-																														kycklinggryta
-																														i
-																														currysås,
-																														curryblad,
-																														senap
-																														och
-																														tamarind.
-																													</p>
-																													<p>23A.
-																														Murgh
-																														Korma
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Kycklingfilé
-																														tillagad
-																														i
-																														kryddig
-																														gräddsås
-																														tillsammans
-																														med
-																														kokos,
-																														cashewnötter
-																														och
-																														kardemumma.
-																													</p>
-																													<p>24A.
-																														Butter
-																														Chicken
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Grillad
-																														kycklingfilé
-																														tillagad
-																														med
-																														gräddsås
-																														och
-																														cashewnötter.
-																													</p>
-																													<p>25A.
-																														Vindaloo
-																														Murgh
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Denna
-																														kycklinggryta
-																														har
-																														sina
-																														rötter
-																														i
-																														regionen
-																														Goa
-																														i
-																														Indien.
-																														Den
-																														tillagas
-																														bland
-																														annat
-																														med
-																														tomat,
-																														chili,
-																														rödvin,
-																														nejlikor
-																														och
-																														kanel.
-																													</p>
+				<!-- Contact Us  -->
+				<div class="row contact_box py-5 justify-content-md-center text-left bg-fix">
+					<div class="col-12 col-md-6">
+						<div class="row p-5 box">
+							<div class="col">
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item ml-1">
+										<a class="nav-link active text-uppercase" id="nordstan-tab" data-toggle="tab"
+											href="#nordstan" role="tab" aria-controls="nordstan"
+											aria-selected="true">Nordstan</a>
+									</li>
+									<li class="nav-item ml-1">
+										<a class="nav-link text-uppercase" id="friggagatan-tab" data-toggle="tab"
+											href="#friggagatan" role="tab" aria-controls="friggagatan"
+											aria-selected="false">FRIGGAGATAN</a>
+									</li>
+									<li class="nav-item ml-1">
+										<a class="nav-link text-uppercase" id="kungsgatan-tab" data-toggle="tab"
+											href="#kungsgatan" role="tab" aria-controls="contact"
+											aria-selected="false">KUNGSGATAN</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="nordstan" role="tabpanel"
+										aria-labelledby="nordstan-tab">
+										<center><br>
+											<h2>Nordstan Take Away Meny</h2>
+										</center>
+										<div align="center">GÖTEBORGSVÄGEN 9,<br class="mobilebreakspace">431 30 MÖLNDAL
+										</div>
+										<div align="center">Ring 031-27 27 26 <i>eller
+											</i><br class="mobilebreakspace"><a href="./order_online.html">beställ
+												takeaway
+												online...</a></div>
 
-																													<h3><strong>
-																															Lamb
-																															Dishes
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>31A.
-																														Rogan
-																														Josh
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p"> Lamm
-																														tillagad
-																														i
-																														yoghurt,
-																														tomat
-																														och
-																														mandel.
-																														Rätten
-																														ör
-																														smaksatt
-																														med
-																														saffran
-																														och
-																														kardemumma.
-																													</p>
-																													<p>32A.
-																														Manglorian
-																														Lamb
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p"> Sydindisk
-																														lammgryta
-																														med
-																														senap,
-																														svartpeppar,
-																														tamarind,
-																														chili
-																														och
-																														kokos.
-																													</p>
-																													<p>33A.
-																														Adraki
-																														Lambdo
-																														Pyaza
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Munsbitar
-																														av
-																														lamm
-																														som
-																														fått
-																														sjuda
-																														i
-																														lök,
-																														ingefära,
-																														koriander,
-																														grön
-																														chili
-																														och
-																														lime.
-																													</p>
-																													<h3><strong>
-																															Beef
-																															Dishes
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>41A.
-																														Masala
-																														Gosht
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p"> Biffbitar
-																														tillagade
-																														i
-																														en
-																														mustig
-																														sås
-																														med
-																														vitlök,tomat,
-																														lök,
-																														chili
-																														och
-																														garam
-																														masala.
-																													</p>
-																													<p>42A.
-																														Kadhai
-																														Gosht
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Biffbitar
-																														tillagade
-																														med
-																														vårlök,
-																														tomat,
-																														paprika
-																														och
-																														kadhai
-																														masala.
-																													</p>
-																													<p>43A.
-																														Mughlai
-																														Gosht
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Biffbitar
-																														tillagade
-																														på
-																														historiskt
-																														nordindiskt
-																														vis
-																														med
-																														cashewnötter,
-																														kardemumma
-																														och
-																														grön
-																														paprika.
-																													</p>
-																													<h3><strong>
-																															Sea
-																															Food
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>51A.
-																														Jhinga
-																														Malai
-																														Korma
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p"> Tigerräkor
-																														tillagade
-																														i
-																														tomat,
-																														kokos
-																														och
-																														kardemumma.
-																													</p>
-																													<p>52A.
-																														Jhinga
-																														Jalfrezi
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Tigerräkor
-																														tillagade
-																														i
-																														tomat,
-																														ingefära,
-																														koriander
-																														och
-																														lime.
-																													</p>
-																													<p>53A.
-																														Malwani
-																														Fish
-																														Curry
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Laxgryta
-																														från
-																														västra
-																														Indien
-																														tillagad
-																														med
-																														vitlök,
-																														kokos,
-																														röd
-																														chili,
-																														nejlika,
-																														stjärnanis
-																														och
-																														kanel.
-																													</p>
-																													<h3><strong>
-																															Vegetarian
-																															Dishes
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>61A.
-																														Palak
-																														Paneer
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Hemlagad
-																														färskost
-																														serverad
-																														i
-																														spenat
-																														med
-																														tomater,
-																														grön
-																														chili
-																														och
-																														färsk
-																														koriander.
-																													</p>
-																													<p>62A.
-																														Aloo
-																														Gobhi
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Blomkål
-																														och
-																														potatis
-																														tillagad
-																														med
-																														tomat,
-																														ingefära,
-																														grön
-																														chili,
-																														garam
-																														masala
-																														och
-																														färsk
-																														koriander.
-																													</p>
-																													<p>63A.
-																														Navratan
-																														Korma
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p"> Mustig
-																														grönsaksgryta
-																														med
-																														cashewnötter,
-																														russin
-																														och
-																														kokos
-																														smaksatt
-																														med
-																														garam
-																														masala.
-																													</p>
-																													<p>64A.
-																														Paneer
-																														Makhni
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Hemlagad
-																														färskost
-																														tillagad
-																														i
-																														gräddsås
-																														med
-																														tomater.
-																													</p>
-																													<p>65A.
-																														Avial
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Grönsaksgryta
-																														med
-																														yoghurt
-																														från
-																														Kerala
-																														med
-																														senap,
-																														curryblad,
-																														chili,
-																														koriander
-																														och
-																														kokos.
-																													</p>
-																													<p>66A.
-																														Malai
-																														Kofta
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Färskostrullader
-																														med
-																														cashewnötter,
-																														sötmandel,
-																														fänkål,
-																														mynta,
-																														färsk
-																														koriander
-																														och
-																														kardemumma.
-																														Serveras
-																														i
-																														en
-																														krämig
-																														sås.
-																													</p>
-																													<p>67A.
-																														Dagens
-																														Daal
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Dagens
-																														linsgryta.
-																													</p>
+										<hr style="height:1px;border-width:0;color:black;background-color:black">
+										<br/>
+
+										<div id="myDIV">
+											<div
+												class="tab_content_body_block elementor-text-editor elementor-clearfix">
+												<h3 class=""><strong>Starters
+													</strong>
+												</h3>
+												<p>1A.
+													Samosa
+													(Veg)
+													<span class="price">45 SEK</span>
+												</p>
+												<p class="p">Indisk
+													pirog
+													med
+													vegetarisk
+													fyllning.
+													Serveras
+													med
+													chutney.
+												</p>
+												<p>2A.
+													Bhrwan
+													Murgh
+													<span class="price">45 SEK</span>
+												</p>
+												<p class="p">Marinerad
+													kycklingfilé
+													fylld
+													med
+													champinjoner,
+													svartpeppar
+													och
+													hemlagad
+													ost.
+													Serveras
+													med
+													chutney.
+												</p>
+												<p>3A.
+													Hariyali
+													Jhinga
+													<span class="price">55 SEK</span>
+												</p>
+												<p class="p">Tigerräkor
+													marinerade
+													med
+													gröna
+													örter
+													och
+													grillad.
+													Serveras
+													med
+													paprikamasala.
+												</p>
+												<p>4A.
+													3st
+													Papadum
+													<span class="price">25 SEK</span>
+												</p>
+												<p class="p">Tunnbröd
+													med
+													kryddsmak.
+												</p>
+
+												<h3><strong>Tandoori
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>11A.
+													Tandoori
+													Chicken
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Grillad
+													Kyckling
+													marinerad
+													i
+													Indiska
+													kryddor.
+													Serveras
+													med
+													tandoorisås.
+												</p>
+												<p>12A.
+													Murg
+													Zaffrani
+													Tikka
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Kycklingfilé
+													marinerad
+													med
+													yoghurt,
+													grädde,
+													cashewnötter,
+													saffran
+													och
+													garam
+													masala.
+													Serveras
+													med
+													Tandoorisås.
+												</p>
+												<p>13A.
+													Chaplikebab
+													<span class="price">55 SEK</span>
+												</p>
+												<p class="p">Lammfärsbiffar
+													med
+													ingefära,
+													koriander,
+													grön
+													chili
+													och
+													mangorelish.
+													Serveras
+													med
+													masalasås.
+												</p>
+												<p>14A.
+													Boti
+													Kebab
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Nötbitar
+													marinerade
+													med
+													rostade
+													kryddor,
+													chili,
+													lime
+													och
+													vitlök.
+													Serveras
+													med
+													masalasås.
+												</p>
+												<p>15A.
+													Malai
+													Jhinga
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Tigerräkor
+													marinerade
+													i
+													yoghurt,
+													rosvatten
+													och
+													cashewnötter.
+													Serveras
+													med
+													tandoorisås.
+												</p>
+												<p>16A.
+													Paneer
+													Tikka
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Marinerad
+													hemlagad
+													ost
+													med
+													indiska
+													kryddor.
+													Serveras
+													med
+													tandoorisås.
+												</p>
+												<h3><strong>Chicken
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>21A.
+													Chicken
+													Tikka
+													Masala
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Kryddmarinerad
+													och
+													grillad
+													kycklingfilé.
+												</p>
+												<p class="p">Serveras
+													i
+													mild
+													kryddig
+													sås.
+												</p>
+												<p>22A.
+													Madras
+													Murghi
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Sydindisk
+													kycklinggryta
+													i
+													currysås,
+													curryblad,
+													senap
+													och
+													tamarind.
+												</p>
+												<p>23A.
+													Murgh
+													Korma
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Kycklingfilé
+													tillagad
+													i
+													kryddig
+													gräddsås
+													tillsammans
+													med
+													kokos,
+													cashewnötter
+													och
+													kardemumma.
+												</p>
+												<p>24A.
+													Butter
+													Chicken
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Grillad
+													kycklingfilé
+													tillagad
+													med
+													gräddsås
+													och
+													cashewnötter.
+												</p>
+												<p>25A.
+													Vindaloo
+													Murgh
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Denna
+													kycklinggryta
+													har
+													sina
+													rötter
+													i
+													regionen
+													Goa
+													i
+													Indien.
+													Den
+													tillagas
+													bland
+													annat
+													med
+													tomat,
+													chili,
+													rödvin,
+													nejlikor
+													och
+													kanel.
+												</p>
+
+												<h3><strong>
+														Lamb
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>31A.
+													Rogan
+													Josh
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p"> Lamm
+													tillagad
+													i
+													yoghurt,
+													tomat
+													och
+													mandel.
+													Rätten
+													ör
+													smaksatt
+													med
+													saffran
+													och
+													kardemumma.
+												</p>
+												<p>32A.
+													Manglorian
+													Lamb
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p"> Sydindisk
+													lammgryta
+													med
+													senap,
+													svartpeppar,
+													tamarind,
+													chili
+													och
+													kokos.
+												</p>
+												<p>33A.
+													Adraki
+													Lambdo
+													Pyaza
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Munsbitar
+													av
+													lamm
+													som
+													fått
+													sjuda
+													i
+													lök,
+													ingefära,
+													koriander,
+													grön
+													chili
+													och
+													lime.
+												</p>
+												<h3><strong>
+														Beef
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>41A.
+													Masala
+													Gosht
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p"> Biffbitar
+													tillagade
+													i
+													en
+													mustig
+													sås
+													med
+													vitlök,tomat,
+													lök,
+													chili
+													och
+													garam
+													masala.
+												</p>
+												<p>42A.
+													Kadhai
+													Gosht
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Biffbitar
+													tillagade
+													med
+													vårlök,
+													tomat,
+													paprika
+													och
+													kadhai
+													masala.
+												</p>
+												<p>43A.
+													Mughlai
+													Gosht
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Biffbitar
+													tillagade
+													på
+													historiskt
+													nordindiskt
+													vis
+													med
+													cashewnötter,
+													kardemumma
+													och
+													grön
+													paprika.
+												</p>
+												<h3><strong>
+														Sea
+														Food
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>51A.
+													Jhinga
+													Malai
+													Korma
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p"> Tigerräkor
+													tillagade
+													i
+													tomat,
+													kokos
+													och
+													kardemumma.
+												</p>
+												<p>52A.
+													Jhinga
+													Jalfrezi
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Tigerräkor
+													tillagade
+													i
+													tomat,
+													ingefära,
+													koriander
+													och
+													lime.
+												</p>
+												<p>53A.
+													Malwani
+													Fish
+													Curry
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Laxgryta
+													från
+													västra
+													Indien
+													tillagad
+													med
+													vitlök,
+													kokos,
+													röd
+													chili,
+													nejlika,
+													stjärnanis
+													och
+													kanel.
+												</p>
+												<h3><strong>
+														Vegetarian
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>61A.
+													Palak
+													Paneer
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Hemlagad
+													färskost
+													serverad
+													i
+													spenat
+													med
+													tomater,
+													grön
+													chili
+													och
+													färsk
+													koriander.
+												</p>
+												<p>62A.
+													Aloo
+													Gobhi
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Blomkål
+													och
+													potatis
+													tillagad
+													med
+													tomat,
+													ingefära,
+													grön
+													chili,
+													garam
+													masala
+													och
+													färsk
+													koriander.
+												</p>
+												<p>63A.
+													Navratan
+													Korma
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p"> Mustig
+													grönsaksgryta
+													med
+													cashewnötter,
+													russin
+													och
+													kokos
+													smaksatt
+													med
+													garam
+													masala.
+												</p>
+												<p>64A.
+													Paneer
+													Makhni
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Hemlagad
+													färskost
+													tillagad
+													i
+													gräddsås
+													med
+													tomater.
+												</p>
+												<p>65A.
+													Avial
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Grönsaksgryta
+													med
+													yoghurt
+													från
+													Kerala
+													med
+													senap,
+													curryblad,
+													chili,
+													koriander
+													och
+													kokos.
+												</p>
+												<p>66A.
+													Malai
+													Kofta
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Färskostrullader
+													med
+													cashewnötter,
+													sötmandel,
+													fänkål,
+													mynta,
+													färsk
+													koriander
+													och
+													kardemumma.
+													Serveras
+													i
+													en
+													krämig
+													sås.
+												</p>
+												<p>67A.
+													Dagens
+													Daal
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Dagens
+													linsgryta.
+												</p>
 
 
 
-																													<h3><strong>Side
-																															Orders
-																														</strong>
-																													</h3>
-																													<p>71A.
-																														Raita
-																														<span
-																															class="price">15 SEK</span>
-																													</p>
-																													<p class="p"> Yoghurt
-																														med
-																														gurka,
-																														tomater
-																														och
-																														speciella
-																														kryddor.
-																													</p>
-																													<p>72A.
-																														Mango
-																														Chutney
-																														<span
-																															class="price">15 SEK</span>
-																													</p>
-																													<p class="p"> Krossad
-																														mango
-																														smaksatt
-																														med
-																														indiska
-																														kryddor
-																													</p>
-																													<p>73A.
-																														Myntasås
-																														<span
-																															class="price">15 SEK</span>
-																													</p>
-																													<p>74A.
-																														Tamarind
-																														Chutney
-																														<span
-																															class="price">15 SEK</span>
-																													</p>
-																													<p>Extra
-																														rislåda
-																														Liten/Stor
-																														<span
-																															class="price">15 SEK/25 SEK</span>
-																													</p>
-																													<p>Extra
-																														Kyckling/lamm/biff
-																														–
-																														Bit
-																														<span
-																															class="price">15 SEK</span>
-																													</p>
+												<h3><strong>Side
+														Orders
+													</strong>
+												</h3>
+												<p>71A.
+													Raita
+													<span class="price">15 SEK</span>
+												</p>
+												<p class="p"> Yoghurt
+													med
+													gurka,
+													tomater
+													och
+													speciella
+													kryddor.
+												</p>
+												<p>72A.
+													Mango
+													Chutney
+													<span class="price">15 SEK</span>
+												</p>
+												<p class="p"> Krossad
+													mango
+													smaksatt
+													med
+													indiska
+													kryddor
+												</p>
+												<p>73A.
+													Myntasås
+													<span class="price">15 SEK</span>
+												</p>
+												<p>74A.
+													Tamarind
+													Chutney
+													<span class="price">15 SEK</span>
+												</p>
+												<p>Extra
+													rislåda
+													Liten/Stor
+													<span class="price">15 SEK/25 SEK</span>
+												</p>
+												<p>Extra
+													Kyckling/lamm/biff
+													–
+													Bit
+													<span class="price">15 SEK</span>
+												</p>
 
 
-																													<h3><strong>Indian
-																															Bread
-																														</strong>
-																													</h3>
-																													<p>81A.
-																														Plain
-																														Naan
-																														<span
-																															class="price">19 SEK</span>
-																													</p>
-																													<p class="p"> Nybakat
-																														mjukt
-																														Naanbröd.
-																													</p>
-																													<p>82A.
-																														Garlic
-																														Naan
-																														<span
-																															class="price">25 SEK</span>
-																													</p>
-																													<p class="p"> Mjukt
-																														bröd
-																														bakat
-																														med
-																														vitlök,
-																														färsk
-																														koriander
-																														och
-																														speciella
-																														kryddor.
-																													</p>
-																													<p>83A.
-																														Peshawri
-																														Naan
-																														(sött)
-																														<span
-																															class="price">45 SEK</span>
-																													</p>
-																													<p class="p">Ett
-																														sött
-																														bröd
-																														fyllt
-																														med
-																														kokos,
-																														russin,
-																														socker,
-																														mandlar,
-																														pistasch
-																														och
-																														cashewnötter.
-																													</p>
-																													<p>84A.
-																														Chili
-																														Naan
-																														<span
-																															class="price">29 SEK</span>
-																													</p>
-																													<p class="p"> Naanbröd
-																														med
-																														chili
-																														och
-																														kryddor.
-																													</p>
-																													<p>85A.
-																														Cheese
-																														Naan
-																														<span
-																															class="price">35 SEK</span>
-																													</p>
-																													<p class="p"> Naanbröd
-																														med
-																														ost
-																														och
-																														kryddor.
-																													</p>
+												<h3><strong>Indian
+														Bread
+													</strong>
+												</h3>
+												<p>81A.
+													Plain
+													Naan
+													<span class="price">19 SEK</span>
+												</p>
+												<p class="p"> Nybakat
+													mjukt
+													Naanbröd.
+												</p>
+												<p>82A.
+													Garlic
+													Naan
+													<span class="price">25 SEK</span>
+												</p>
+												<p class="p"> Mjukt
+													bröd
+													bakat
+													med
+													vitlök,
+													färsk
+													koriander
+													och
+													speciella
+													kryddor.
+												</p>
+												<p>83A.
+													Peshawri
+													Naan
+													(sött)
+													<span class="price">45 SEK</span>
+												</p>
+												<p class="p">Ett
+													sött
+													bröd
+													fyllt
+													med
+													kokos,
+													russin,
+													socker,
+													mandlar,
+													pistasch
+													och
+													cashewnötter.
+												</p>
+												<p>84A.
+													Chili
+													Naan
+													<span class="price">29 SEK</span>
+												</p>
+												<p class="p"> Naanbröd
+													med
+													chili
+													och
+													kryddor.
+												</p>
+												<p>85A.
+													Cheese
+													Naan
+													<span class="price">35 SEK</span>
+												</p>
+												<p class="p"> Naanbröd
+													med
+													ost
+													och
+													kryddor.
+												</p>
 
 
 
-																													<h3><strong>Indian
-																															Cold
-																															Soft
-																															Drinks
-																														</strong>
-																													</h3>
-																													<p>130A.
-																														.
-																														Lassi
-																														Mango
-																														<span
-																															class="price">30 SEK</span>
-																													</p>
-																													<p class="p"> Yoghurtdryck
-																														med
-																														mango
-																														och
-																														kardemumma.
-																													</p>
-                    </div>
+												<h3><strong>Indian
+														Cold
+														Soft
+														Drinks
+													</strong>
+												</h3>
+												<p>130A.
+													.
+													Lassi
+													Mango
+													<span class="price">30 SEK</span>
+												</p>
+												<p class="p"> Yoghurtdryck
+													med
+													mango
+													och
+													kardemumma.
+												</p>
+											</div>
+										</div>
+										<br>
+										<br>
+										<hr style="height:2px;border-width:0;color:black;background-color:black">
+										<div><span class="p"><b>Stående alternativ:</b>&nbsp;</span>
+
+
+											(109 SEK)<br class="mobilebreakspace"><b>Tandoori Chicken:</b>&nbsp;
+
+
+
+											Marinerad kycklingsklubba med indiska kryddor, grillad i ugn.
+
+										</div>
+										<div align="left"><b>Chicken Tikka Masala:</b>
+
+											Marinerad och grillad kycklingsfilé, serveras i mild kryddig sås
+											<br class="mobilebreakspace"><b>Palak Paneer (Veg):</b>
+
+											Hemlagad färsk ost serverad i spenat, tomater grön chili och färsk koriander
+										</div>
+									</div>
+									<div class="tab-pane fade" id="friggagatan" role="tabpanel"
+										aria-labelledby="friggagatan-tab">
+										<div align="center"><br>
+											<h2>Friggagatan Take Away Meny</h2>
+										</div>
+										<div align="center">Nordstan 7, <br class="mobilebreakspace">412 53 GÖTEBORG
+										</div>
+										<div align="center">Tel 031-20 25 30 <i>eller
+											</i><br class="mobilebreakspace"><a
+												href="./order_online.html#friggagatan">beställ takeaway
+												online...</a></div>
+										<hr style="height:1px;border-width:0;color:black;background-color:black">
+										<br>
+										<div id="myDIV2">
+											<div
+												class="tab_content_body_block elementor-text-editor elementor-clearfix">
+												<h3><strong>Starters
+													</strong>
+												</h3>
+
+												<p>1A.
+													Samosa
+													(Veg)
+													<span class="price">45 SEK</span>
+												</p>
+												<p class="p">Indisk
+													pirog
+													med
+													vegetarisk
+													fyllning.
+
+												</p>
+												<p>2A.
+													Mix Pakora
+													<span class="price">45 SEK</span>
+												</p>
+												<p class="p">Friterade veg. blandning med kikärtsmjöl serveras med
+													myntasås.
+
+												</p>
+												<p>3A.
+													Allo Tikki
+													<span class="price">35 SEK</span>
+												</p>
+												<p class="p">Kryddig potatis pirog, serveras med myntasås.
+
+												</p>
+
+												<h3><strong>Tandoori
+														Dishes
+														(Alla rätter serveras med ris och tandoorisås)
+													</strong>
+												</h3>
+												<p>11A.
+													Tandoori
+													Chicken
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Grillad
+													Kyckling
+													marinerad
+													i
+													Indiska
+													kryddor.
+
+												</p>
+												<p>12A.
+													Murg Lassuni
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Kycklingfilé marinerad i vitlök, grön chili och
+													Kryddor.
+
+												</p>
+												<p>13A.
+													Chicken tikka
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Marinerad kycklingfilé i tandoorikryddor
+												</p>
+												<p>14A.
+													Seek Kebab
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Grillade lammfärsrullader med koriander, grön chili
+													och kryddor
+												</p>
+												<p>15A.
+													Lamb Tikka
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Grillad lammfilé bitar marinerad i yoghurt och kryddor.
+												</p>
+												<p>16A.
+													Beef Tikka
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Grillade nötköttbitar marinerade i yoghurt och färska
+													kryddor.
+												</p>
+												<p>17A.
+													Tandoori Jingha
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Tigerräkor marinerade i yoghurt, ingefära, vitlök
+													och speciella kryddor.
+												</p>
+												<p>18A.
+													Tandoori kitchen special
+													<span class="price">145 SEK</span>
+												</p>
+												<p class="p">En delikat blandning av olika tandoori rätter.
+												</p>
+
+												<h3><strong>Chicken
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>21A.
+													Chicken
+													Tikka
+													Masala
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Marinerad och grillad kycklingfilé serveras i kryddig
+													sås.
+												</p>
+
+												<p>22A.
+													Chicken Punjabi
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Grillad kycklingfilé tillagad med grädde och kikärtor.
+												</p>
+												<p>23A.
+													Chicken Korma
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Grillad kycklingfilé tillagad med mandel & cashew i
+													gräddsås.
+												</p>
+												<p>24A.
+													Butter Chicken
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Grillad kycklingfilé tillagad med gräddsås och
+													cashewnötter.
+
+												</p>
+												<p>25A.
+													Chicken Kadai
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Kycklingfilé tillagad med grön chili, paprika,youghurt
+													och Tandooris egna starka kryddor.
+
+												</p>
+												<p>26A.
+													Saag Wala Chicken
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Kycklingfilé med spenat, ingefära, vitlök
+													och garm masala
+												</p>
+												<p>27A.
+													Vindaloo Chicken (stark)
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Kyckling tillagad med nordindiska kryddor,
+													Paprika och rödvin.
+												</p>
+												<p>28A.
+													Chicken Balti
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Kycklingfilé marinerad i vitlök, grön chili.
+													Tillagas i en kryddig rödvinsås med ingefära,
+													champinjoner och paprika.
+
+												</p>
+
+												<h3><strong>
+														Lamb
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>31A.
+													Rogan
+													Josh
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p"> Lamm kokt i yoghurt och tomat. Med kryddig
+													löksås, hackade tomater och cashewnötter.
+
+												</p>
+												<p>32A.
+													Saag Wala Lamb
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p"> Lammkött tillagad med spenat, lök, tomater,
+													grön chili och kryddor.
+
+												</p>
+												<p>33A.
+													Lamb Balti
+													<span class="price">135 SEK</span>
+												</p>
+												<p class="p">Lammkött marinerad i vitlök och grön chili,
+													tillagad med ingefära, champinjoner och paprika
+													i en kryddstark rödvinsås.
+												</p>
+												<p>34A.
+													Lamb Karahi
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Lammfilé tillagad medyoughurt, grön chili, tomat,
+													ingefära och paprika i en kryddig currysås.
+												</p>
+												<p>35A.
+													Lamm Korma
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Lammfilé tillagad i en krämig mandelsås med kryddor
+												</p>
+												<p>36A.
+													Punjabi Lamb
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">En traditionell nordindisk gryta med lammfilé
+													tillagad i yoghurt, kikärtor, garm masala,
+													färsk koriander.
+												</p>
+												<p>37A.
+													Vindaloo Lamb (stark)
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Lammrostbiff tillagad med nordindiska kryddor,
+													Paprika och rödvin.
+												</p>
+
+												<h3><strong>
+														Beef
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>41A.
+													Beef Korma
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p"> Biff tillagad med grädde och mandel i mild sås.
+												</p>
+												<p>42A.
+													Beef Karahi
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Biff tillagad med ingefära, grön chili, tomater, paprika
+													Och youghurti en kryddig currysås.
+
+												</p>
+												<p>43A.
+													Vindaloo Beef (stark)
+													<span class="price">135 SEK</span>
+												</p>
+												<p class="p">Biff tillagad med nordindiska kryddor,
+													Paprika och rödvin
+												</p>
+												<p>45A.
+													Beef Balti
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Biff marinerad i vitlök. Tillagad med grön chili,
+													ingefära, champinjoner och paprika i en kryddstark
+													sås med rödvin.
+												</p>
+												<h3><strong>
+														Sea
+														Food
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>51A.
+													Jhinga Masala
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p"> Tigerräkor marinerade i vitlök och ingefära
+													tillagade med ägg i en kryddig gräddsås.
+
+												</p>
+												<p>52A.
+													Jhinga Punjab
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Tigerräkor med special nordindiska kryddor,
+													ingefära och kikärtor. En traditionell rätt från Punjab
+												</p>
+												<p>53A.
+													Jinga Balti
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Tigerräkor tillagade med lök, paprika, champinjoner,
+													tomater och vitlök i rödvinssås.
+
+												</p>
+												<p>54A.
+													Jinga Korma (mild)
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Tigerräkor tillagade med nötter och grädde i currysås
+												</p>
+												<p>55A.
+													Fish Korma (mild)
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Laxfilè gryta med nötter och grädde i currysås
+												</p>
+												<p>56A.
+													Fish Balti
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Laxfilé tillagad med lök, paprika, champinjoner,
+													tomat och vitlök i rödvinssås.
+												</p>
+												<h3><strong>
+														Vegetarian
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>61A.
+													Palak
+													Paneer
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Färsk hemlagad ost serverad i spenat med
+													tomat, grön chili och färsk koriander.
+												</p>
+												<p>62A.
+													Shahi Paneer
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Färsk hemlagad ost tillagad i krämig sås
+													med kryddor, mandlar, cashewnätter och grädde
+												</p>
+												<p>63A.
+													Panner Tikka masala (Mild)
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p"> Panner i serveras i krämig och kryddig sås.
+
+												</p>
+												<p>64A.
+													Paneer Balti
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Färsk hemlagad ost tillagad med paprika,
+													ingefära, tomat, champinjoner, grön chili och vitlök
+													i en kryddstark sås med rödvin.
+
+												</p>
+												<p>65A.
+													Aloo Gobhi
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Blomkål och potatis med lök, tomat, ingefära,
+													grön chili, garam masala och färsk koriander
+												</p>
+												<p>66A.
+													Mix Veg
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Grönsaksgryta med cashewnötter tillagad
+													i kryddig currysås.
+
+												</p>
+												<p>67A.
+													Chana Masala
+													<span class="price">109 SEK</span>
+												</p>
+												<p class="p">Kikärtor tillagade i currysås med ingefära
+													och garam masala.
+												</p>
+												<p>68A.
+													Dal Makhni
+													<span class="price">109 SEK</span>
+												</p>
+												<p class="p">Linser tillagade med ingefära, färsk koriander och
+													garam Masala.
+												</p>
+												<p>69A.
+													ShaiKofta
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Hemlagad färskost och blomkål i rullader.
+													Tillagas med grädde,mandlar och cashewnötter i en
+													krydding currygryta.
+
+												</p>
+
+
+
+												<h3><strong>Side
+														Orders
+													</strong>
+												</h3>
+												<p>71A.
+													Raita
+													<span class="price">15 SEK</span>
+												</p>
+												<p class="p"> Naturell yoghurt med gurka och tomater
+													blandad med speciella kryddor.
+												</p>
+												<p>72A.
+													Mango Chutney
+													<span class="price">15 SEK</span>
+												</p>
+												<p class="p"> Sött kryddat mang fruktkött.
+												</p>
+												<p>73A.
+													Papadum
+													<span class="price">15 SEK</span>
+												</p>
+												<p class="p">3 st tunnbröd med kryddsmak.
+
+												</p>
+												<p>74A.
+													Myntasås
+													<span class="price">15 SEK</span>
+												</p>
+												<p class="p">Syrlig yoghurt med mynta.
+
+												</p>
+												<p>75A.
+													Chilipiceles
+													<span class="price">7 SEK</span>
+												</p>
+												<p>76A.
+													Extra rislåda Liten/Stor
+													<span class="price">15 SEK/25 SEK</span>
+												</p>
+												<p>77A.
+													Extra Kyckling/lamm/biff – Bit
+													<span class="price">15 SEK</span>
+												</p>
+												<h3><strong>Indian
+														Bread
+													</strong>
+												</h3>
+												<p>81A.
+													Plain
+													Naan
+													<span class="price">19 SEK</span>
+												</p>
+												<p class="p"> Nybakat
+													mjukt
+													Naanbröd.
+												</p>
+												<p>82A.
+													Garlic
+													Naan
+													<span class="price">25 SEK</span>
+												</p>
+												<p class="p"> Nybakat mjukt vitlöksbröd och speciella kryddor.
+
+												</p>
+												<p>83A.
+													Peshawri Naan (sött)
+													<span class="price">45 SEK</span>
+												</p>
+												<p class="p">Ett bröd fyllt med kokos, russin, socker, mandel,
+													och cashewnötter.
+												</p>
+												<p>84A.
+													Punjabi Naan
+													<span class="price">45 SEK</span>
+												</p>
+												<p class="p"> Ett traditionellt bakat bröd fyllt med hemlagad paneer,
+													potatis, koriander och speciella kryddor.
+
+												</p>
+												<p>85A.
+													Cheese Naan
+													<span class="price">35 SEK</span>
+												</p>
+												<p class="p"> Nybakat Naanbröd med ost och kryddor.
+
+												</p>
+
+
+
+												<h3><strong>Indian
+														Cold
+														Soft
+														Drinks
+													</strong>
+												</h3>
+												<p>130A.
+													.
+													Mango Lassi
+													<span class="price">30 SEK</span>
+												</p>
+												<p class="p"> Yoghurt dryck med smak av mango och kardemumma
+												</p>
+											</div>
+										</div>
+										<br><br>
+										<hr style="height:2px;border-width:0;color:black;background-color:black">
+										<div><span class="p"><b>Stående alternativ:</b>&nbsp;</span>
+
+
+											(109 SEK)<br class="mobilebreakspace"><b>Tandoori Chicken:</b>&nbsp;
+
+
+
+											Marinerad kycklingsklubba med indiska kryddor, grillad i ugn.
+
+										</div>
+										<div align="left"><b>Chicken Tikka Masala:</b>
+
+											Marinerad och grillad kycklingsfilé, serveras i mild kryddig sås
+											<br class="mobilebreakspace"><b>Palak Paneer (Veg):</b>
+
+											Hemlagad färsk ost serverad i spenat, tomater grön chili och färsk koriander
+										</div>
+									</div>
+									<div class="tab-pane fade" id="kungsgatan" role="tabpanel"
+										aria-labelledby="kungsgatan-tab">
+										<div align="center"><br>
+											<h2>Kungsgatan Take Away Meny</h2>
+										</div>
+										<div align="center">ÅNÄSVÄGEN 2, <br class="mobilebreakspace">416 67 GÖTEBORG
+										</div>
+										<div align="center">Ring 031-19 09 20 <i>eller
+											</i><br class="mobilebreakspace"><a
+												href="./order_online.html#kungsgatan">beställ takeaway
+												online...</a></div>
+										<hr style="height:1px;border-width:0;color:black;background-color:black">
+										<br>
+										<div id="myDIV3">
+											<div
+												class="tab_content_body_block elementor-text-editor elementor-clearfix">
+												<h3><strong>Starters
+													</strong>
+												</h3>
+												<p>1A.
+													Samosa
+													(Veg)
+													<span class="price">45 SEK</span>
+												</p>
+												<p class="p">Indisk
+													pirog
+													med
+													vegetarisk
+													fyllning.
+													Serveras
+													med
+													chutney.
+												</p>
+												<p>2A.
+													Bhrwan
+													Murgh
+													<span class="price">45 SEK</span>
+												</p>
+												<p class="p">Marinerad
+													kycklingfilé
+													fylld
+													med
+													champinjoner,
+													svartpeppar
+													och
+													hemlagad
+													ost.
+													Serveras
+													med
+													chutney.
+												</p>
+												<p>3A.
+													Hariyali
+													Jhinga
+													<span class="price">55 SEK</span>
+												</p>
+												<p class="p">Tigerräkor
+													marinerade
+													med
+													gröna
+													örter
+													och
+													grillad.
+													Serveras
+													med
+													paprikamasala.
+												</p>
+												<p>4A.
+													3st
+													Papadum
+													<span class="price">25 SEK</span>
+												</p>
+												<p class="p">Tunnbröd
+													med
+													kryddsmak.
+												</p>
+												<h3><strong>Tandoori
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>11A.
+													Tandoori
+													Chicken
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Grillad
+													Kyckling
+													marinerad
+													i
+													Indiska
+													kryddor.
+													Serveras
+													med
+													tandoorisås.
+												</p>
+												<p>12A.
+													Murg
+													Zaffrani
+													Tikka
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Kycklingfilé
+													marinerad
+													med
+													yoghurt,
+													grädde,
+													cashewnötter,
+													saffran
+													och
+													garam
+													masala.
+													Serveras
+													med
+													Tandoorisås.
+												</p>
+												<p>13A.
+													Chaplikebab
+													<span class="price">55 SEK</span>
+												</p>
+												<p class="p">Lammfärsbiffar
+													med
+													ingefära,
+													koriander,
+													grön
+													chili
+													och
+													mangorelish.
+													Serveras
+													med
+													masalasås.
+												</p>
+												<p>14A.
+													Boti
+													Kebab
+													<span class="price">125 SEK</span>
+												</p>
+												<p class="p">Nötbitar
+													marinerade
+													med
+													rostade
+													kryddor,
+													chili,
+													lime
+													och
+													vitlök.
+													Serveras
+													med
+													masalasås.
+												</p>
+												<p>15A.
+													Malai
+													Jhinga
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Tigerräkor
+													marinerade
+													i
+													yoghurt,
+													rosvatten
+													och
+													cashewnötter.
+													Serveras
+													med
+													tandoorisås.
+												</p>
+												<p>16A.
+													Paneer
+													Tikka
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Marinerad
+													hemlagad
+													ost
+													med
+													indiska
+													kryddor.
+													Serveras
+													med
+													tandoorisås.
+												</p>
+												<h3><strong>Chicken
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>21A.
+													Chicken
+													Tikka
+													Masala
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Kryddmarinerad
+													och
+													grillad
+													kycklingfilé.
+												</p>
+												<p class="p">Serveras
+													i
+													mild
+													kryddig
+													sås.
+												</p>
+												<p>22A.
+													Madras
+													Murghi
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Sydindisk
+													kycklinggryta
+													i
+													currysås,
+													curryblad,
+													senap
+													och
+													tamarind.
+												</p>
+												<p>23A.
+													Murgh
+													Korma
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Kycklingfilé
+													tillagad
+													i
+													kryddig
+													gräddsås
+													tillsammans
+													med
+													kokos,
+													cashewnötter
+													och
+													kardemumma.
+												</p>
+												<p>24A.
+													Butter
+													Chicken
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Grillad
+													kycklingfilé
+													tillagad
+													med
+													gräddsås
+													och
+													cashewnötter.
+												</p>
+												<p>25A.
+													Vindaloo
+													Murgh
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Denna
+													kycklinggryta
+													har
+													sina
+													rötter
+													i
+													regionen
+													Goa
+													i
+													Indien.
+													Den
+													tillagas
+													bland
+													annat
+													med
+													tomat,
+													chili,
+													rödvin,
+													nejlikor
+													och
+													kanel.
+												</p>
+												<h3><strong>
+														Lamb
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>31A.
+													Rogan
+													Josh
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p"> Lamm
+													tillagad
+													i
+													yoghurt,
+													tomat
+													och
+													mandel.
+													Rätten
+													ör
+													smaksatt
+													med
+													saffran
+													och
+													kardemumma.
+												</p>
+												<p>32A.
+													Manglorian
+													Lamb
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p"> Sydindisk
+													lammgryta
+													med
+													senap,
+													svartpeppar,
+													tamarind,
+													chili
+													och
+													kokos.
+												</p>
+												<p>33A.
+													Adraki
+													Lambdo
+													Pyaza
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Munsbitar
+													av
+													lamm
+													som
+													fått
+													sjuda
+													i
+													lök,
+													ingefära,
+													koriander,
+													grön
+													chili
+													och
+													lime.
+												</p>
+												<h3><strong>
+														Beef
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>41A.
+													Masala
+													Gosht
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p"> Biffbitar
+													tillagade
+													i
+													en
+													mustig
+													sås
+													med
+													vitlök,tomat,
+													lök,
+													chili
+													och
+													garam
+													masala.
+												</p>
+												<p>42A.
+													Kadhai
+													Gosht
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Biffbitar
+													tillagade
+													med
+													vårlök,
+													tomat,
+													paprika
+													och
+													kadhai
+													masala.
+												</p>
+												<p>43A.
+													Mughlai
+													Gosht
+													<span class="price">129 SEK</span>
+												</p>
+												<p class="p">Biffbitar
+													tillagade
+													på
+													historiskt
+													nordindiskt
+													vis
+													med
+													cashewnötter,
+													kardemumma
+													och
+													grön
+													paprika.
+												</p>
+												<h3><strong>
+														Sea
+														Food
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>51A.
+													Jhinga
+													Malai
+													Korma
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p"> Tigerräkor
+													tillagade
+													i
+													tomat,
+													kokos
+													och
+													kardemumma.
+												</p>
+												<p>52A.
+													Jhinga
+													Jalfrezi
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Tigerräkor
+													tillagade
+													i
+													tomat,
+													ingefära,
+													koriander
+													och
+													lime.
+												</p>
+												<p>53A.
+													Malwani
+													Fish
+													Curry
+													<span class="price">139 SEK</span>
+												</p>
+												<p class="p">Laxgryta
+													från
+													västra
+													Indien
+													tillagad
+													med
+													vitlök,
+													kokos,
+													röd
+													chili,
+													nejlika,
+													stjärnanis
+													och
+													kanel.
+												</p>
+												<h3><strong>
+														Vegetarian
+														Dishes
+														(Alla
+														rätter
+														serveras
+														med
+														ris)
+													</strong>
+												</h3>
+												<p>61A.
+													Palak
+													Paneer
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Hemlagad
+													färskost
+													serverad
+													i
+													spenat
+													med
+													tomater,
+													grön
+													chili
+													och
+													färsk
+													koriander.
+												</p>
+												<p>62A.
+													Aloo
+													Gobhi
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Blomkål
+													och
+													potatis
+													tillagad
+													med
+													tomat,
+													ingefära,
+													grön
+													chili,
+													garam
+													masala
+													och
+													färsk
+													koriander.
+												</p>
+												<p>63A.
+													Navratan
+													Korma
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p"> Mustig
+													grönsaksgryta
+													med
+													cashewnötter,
+													russin
+													och
+													kokos
+													smaksatt
+													med
+													garam
+													masala.
+												</p>
+												<p>64A.
+													Paneer
+													Makhni
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Hemlagad
+													färskost
+													tillagad
+													i
+													gräddsås
+													med
+													tomater.
+												</p>
+												<p>65A.
+													Avial
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Grönsaksgryta
+													med
+													yoghurt
+													från
+													Kerala
+													med
+													senap,
+													curryblad,
+													chili,
+													koriander
+													och
+													kokos.
+												</p>
+												<p>66A.
+													Malai
+													Kofta
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Färskostrullader
+													med
+													cashewnötter,
+													sötmandel,
+													fänkål,
+													mynta,
+													färsk
+													koriander
+													och
+													kardemumma.
+													Serveras
+													i
+													en
+													krämig
+													sås.
+												</p>
+												<p>67A.
+													Dagens
+													Daal
+													<span class="price">115 SEK</span>
+												</p>
+												<p class="p">Dagens
+													linsgryta.
+												</p>
+
+
+
+												<h3><strong>Side
+														Orders
+													</strong>
+												</h3>
+												<p>71A.
+													Raita
+													<span class="price">15 SEK</span>
+												</p>
+												<p class="p"> Yoghurt
+													med
+													gurka,
+													tomater
+													och
+													speciella
+													kryddor.
+												</p>
+												<p>72A.
+													Mango
+													Chutney
+													<span class="price">15 SEK</span>
+												</p>
+												<p class="p"> Krossad
+													mango
+													smaksatt
+													med
+													indiska
+													kryddor
+												</p>
+												<p>73A.
+													Myntasås
+													<span class="price">15 SEK</span>
+												</p>
+												<p>74A.
+													Tamarind
+													Chutney
+													<span class="price">15 SEK</span>
+												</p>
+												<p class="p">Extra
+													rislåda
+													Liten/Stor
+													<span class="price">15 SEK/25 SEK</span>
+												</p>
+												<p class="p">Extra
+													Kyckling/lamm/biff
+													–
+													Bit
+													<span class="price">15 SEK</span>
+												</p>
+
+
+												<h3><strong>Indian
+														Bread
+													</strong>
+												</h3>
+												<p>81A.
+													Plain
+													Naan
+													<span class="price">19 SEK</span>
+												</p>
+												<p class="p"> Nybakat
+													mjukt
+													Naanbröd.
+												</p>
+												<p>82A.
+													Garlic
+													Naan
+													<span class="price">25 SEK</span>
+												</p>
+												<p class="p"> Mjukt
+													bröd
+													bakat
+													med
+													vitlök,
+													färsk
+													koriander
+													och
+													speciella
+													kryddor.
+												</p>
+												<p>83A.
+													Peshawri
+													Naan
+													(sött)
+													<span class="price">45 SEK</span>
+												</p>
+												<p class="p">Ett
+													sött
+													bröd
+													fyllt
+													med
+													kokos,
+													russin,
+													socker,
+													mandlar,
+													pistasch
+													och
+													cashewnötter.
+												</p>
+												<p>84A.
+													Chili
+													Naan
+													<span class="price">29 SEK</span>
+												</p>
+												<p class="p"> Naanbröd
+													med
+													chili
+													och
+													kryddor.
+												</p>
+												<p>85A.
+													Cheese
+													Naan
+													<span class="price">35 SEK</span>
+												</p>
+												<p class="p"> Naanbröd
+													med
+													ost
+													och
+													kryddor.
+												</p>
+
+
+
+												<h3><strong>Indian
+														Cold
+														Soft
+														Drinks
+													</strong>
+												</h3>
+												<p>130A.
+													.
+													Lassi
+													Mango
+													<span class="price">30 SEK</span>
+												</p>
+												<p class="p"> Yoghurtdryck
+													med
+													mango
+													och
+													kardemumma.
+												</p>
+											</div>
+										</div>
+										<br>
+										<br>
+										<hr style="height:2px;border-width:0;color:black;background-color:black">
+										<div><span class="p"><b>Stående alternativ:</b>&nbsp;</span>
+											(109 SEK)<br class="mobilebreakspace"><b>Tandoori Chicken:</b>&nbsp;
+											Marinerad kycklingsklubba med indiska kryddor, grillad i ugn.
+										</div>
+										<div align="left"><b>Chicken Tikka Masala:</b>
+											Marinerad och grillad kycklingsfilé, serveras i mild kryddig sås
+											<br class="mobilebreakspace"><b>Palak Paneer (Veg):</b>
+											Hemlagad färsk ost serverad i spenat, tomater grön chili och färsk koriander
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<br>
-					 <br>
-					 <hr style="height:2px;border-width:0;color:black;background-color:black">
-					   <div ><span class="p"><b>Stående alternativ:</b>&nbsp;</span>
-						  
+				</div>
 
-						   (109  SEK)<br
-						 class="mobilebreakspace"><b>Tandoori Chicken:</b>&nbsp;
-						
-						
+			</div>
+		</main>
 
-						 Marinerad kycklingsklubba med indiska kryddor, grillad i ugn.
- 
-					 </div>
-					 <div align="left"><b>Chicken Tikka Masala:</b>
+		<!-- Footer -->
+		<footer class="row footer text-light py-3 justify-content-center">
+			<div class="col-10">
 
-					   Marinerad och grillad kycklingsfilé, serveras i mild kryddig sås
-						 <br class="mobilebreakspace"><b>Palak Paneer (Veg):</b>
-						
-						 Hemlagad färsk ost serverad i spenat, tomater grön chili och färsk koriander
-					  </div>
-                  </div>
-                  <div class="tab-pane fade" id="friggagatan" role="tabpanel" aria-labelledby="friggagatan-tab">
-                    <div align="center"><br>
-                      <h2>Friggagatan Take Away Meny</h2>
-                    </div>
-                    <div align="center">Nordstan 7, <br
-                        class="mobilebreakspace">412 53 GÖTEBORG
-                    </div>
-                    <div align="center">Tel 031-20 25 30 <i>eller
-                      </i><br class="mobilebreakspace"><a href="./order_online.html#friggagatan"
-					  >beställ takeaway
-					  online...</a></div>
-					  <hr style="height:1px;border-width:0;color:black;background-color:black">
-
-					  <b>
-							<div align="center">Lunch 99 SEK inkl. Sallad, Nybakat nanbröd (95 SEK Vid Take away)<br
-							  class="mobilebreakspace">Extra nanbröd 10 SEK eller byt upp till Vitlöksnan för 19 SEK
-					  
-						  </div>
-						  <div align="center">Dricka (Flaska)19 SEK och Mangolassi 29 SEK
-							  <br class="mobilebreakspace">(Allt bröd är veganskt)
-						   </div></b>	
-						  <br>
-				<center>
-					  <input id="myInput2" type="text" placeholder="sökmeny...">
-</center>
-<br><br>
-<div id="myDIV2">
-                        <div
-																													class="tab_content_body_block elementor-text-editor elementor-clearfix">
-																													<h3 ><strong>Starters
-																														</strong>
-																													</h3>
-																							
-																													<p>1A.
-																														Samosa
-																														(Veg)
-																														<span
-																															class="price">45 SEK</span>
-																													</p>
-																													<p class="p">Indisk
-																														pirog
-																														med
-																														vegetarisk
-																														fyllning.
-																														
-																													</p>
-																													<p>2A.
-																														Mix Pakora
-																														<span
-																															class="price">45 SEK</span>
-																													</p>
-																													<p class="p">Friterade veg. blandning med kikärtsmjöl serveras med
-myntasås.
-
-																													</p>
-																													<p>3A.
-																														Allo Tikki
-																														<span
-																															class="price">35 SEK</span>
-																													</p>
-																													<p class="p">Kryddig potatis pirog, serveras med myntasås.
-
-																													</p>
-																													
-																													<h3><strong>Tandoori
-																															Dishes
-																															(Alla rätter serveras med ris och tandoorisås)
-																														</strong>
-																													</h3>
-																													<p>11A.
-																														Tandoori
-																														Chicken
-																														<span
-																															class="price">125 SEK</span>
-																													</p>
-																													<p class="p">Grillad
-																														Kyckling
-																														marinerad
-																														i
-																														Indiska
-																														kryddor.
-																													
-																													</p>
-																													<p>12A.
-																														Murg Lassuni
-																														<span
-																															class="price">125 SEK</span>
-																													</p>
-																													<p class="p">Kycklingfilé marinerad i vitlök, grön chili och
- Kryddor.
-
-																													</p>
-																													<p>13A.
-																														Chicken tikka
-																														<span
-																															class="price">125 SEK</span>
-																													</p>
-																													<p class="p">Marinerad kycklingfilé i tandoorikryddor
-																													</p>
-																													<p>14A.
-																														 Seek Kebab 
-																														<span
-																															class="price">125 SEK</span>
-																													</p>
-																													<p class="p">Grillade lammfärsrullader med koriander, grön chili
- och kryddor
-																													</p>
-																													<p>15A.
-																														Lamb Tikka
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Grillad lammfilé bitar marinerad i yoghurt och kryddor.
-																													</p>
-																													<p>16A.
-																														Beef Tikka
-																														<span
-																															class="price">125 SEK</span>
-																													</p>
-																													<p class="p">Grillade nötköttbitar marinerade i yoghurt och färska
-kryddor. 
-																													</p>
-																														<p>17A.
-																														Tandoori Jingha
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Tigerräkor marinerade i yoghurt, ingefära, vitlök
- och speciella kryddor.
-</p>	<p>18A.
-																														Tandoori kitchen special
-																														<span
-																															class="price">145 SEK</span>
-																													</p>
-																													<p class="p">En delikat blandning av olika tandoori rätter.
-</p>
-
-																													<h3><strong>Chicken
-																															Dishes
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>21A.
-																														Chicken
-																														Tikka
-																														Masala
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Marinerad och grillad kycklingfilé serveras i kryddig
-sås.
-																													</p>
-																													
-																													<p>22A.
-																														Chicken Punjabi
-																														<span
-																															class="price">125 SEK</span>
-																													</p>
-																													<p class="p">Grillad kycklingfilé tillagad med grädde och kikärtor.
-																													</p>
-																													<p>23A.
-																														Chicken Korma
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Grillad kycklingfilé tillagad med mandel & cashew i
-gräddsås.
-																													</p>
-																													<p>24A.
-																														Butter Chicken
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Grillad kycklingfilé tillagad med gräddsås och
-cashewnötter.
-
-																													</p>
-																													<p>25A.
-																														Chicken Kadai
-																														<span
-																															class="price">125 SEK</span>
-																													</p>
-																													<p class="p">Kycklingfilé tillagad med grön chili, paprika,youghurt
-och Tandooris egna starka kryddor.
-
-																													</p><p>26A.
-																														Saag Wala Chicken
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Kycklingfilé med spenat, ingefära, vitlök
-och garm masala
-																													</p><p>27A.
-																														Vindaloo Chicken (stark)
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Kyckling tillagad med nordindiska kryddor,
- Paprika och rödvin.
-																													</p><p>28A.
-																														 Chicken Balti
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Kycklingfilé marinerad i vitlök, grön chili.
- Tillagas i en kryddig rödvinsås med ingefära,
- champinjoner och paprika.
-
-																													</p>
-
-																													<h3><strong>
-																															Lamb
-																															Dishes
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>31A.
-																														Rogan
-																														Josh
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p"> Lamm kokt i yoghurt och tomat. Med kryddig
- löksås, hackade tomater och cashewnötter.
-
-																													</p>
-																													<p>32A.
-																														Saag Wala Lamb 
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p"> Lammkött tillagad med spenat, lök, tomater,
- grön chili och kryddor.
-
-																													</p>
-																													<p>33A.
-																														Lamb Balti 
-																														<span
-																															class="price">135 SEK</span>
-																													</p>
-																													<p class="p">Lammkött marinerad i vitlök och grön chili,
- tillagad med ingefära, champinjoner och paprika
- i en kryddstark rödvinsås.
-																													</p>
-																													<p>34A.
-																														Lamb Karahi
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Lammfilé tillagad medyoughurt, grön chili, tomat,
-ingefära och paprika i en kryddig currysås.
-																													</p><p>35A.
-																														Lamm Korma 
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Lammfilé tillagad i en krämig mandelsås med kryddor
-																													</p><p>36A.
-																														Punjabi Lamb
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">En traditionell nordindisk gryta med lammfilé
- tillagad i yoghurt, kikärtor, garm masala,
- färsk koriander.
-																													</p><p>37A.
-																														Vindaloo Lamb (stark) 
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Lammrostbiff tillagad med nordindiska kryddor,
- Paprika och rödvin.
-																													</p>
-
-																													<h3><strong>
-																															Beef
-																															Dishes
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>41A.
-																														Beef Korma
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p"> Biff tillagad med grädde och mandel i mild sås.
-																													</p>
-																													<p>42A.
-																														Beef Karahi
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Biff tillagad med ingefära, grön chili, tomater, paprika
-Och youghurti en kryddig currysås.
-
-																													</p>
-																													<p>43A.
-																														Vindaloo Beef (stark)
-																														<span
-																															class="price">135 SEK</span>
-																													</p>
-																													<p class="p">Biff tillagad med nordindiska kryddor,
-Paprika och rödvin
-																													</p>
-																													<p>45A.
-																														Beef Balti
-																														<span
-																															class="price">129 SEK</span>
-																													</p>
-																													<p class="p">Biff marinerad i vitlök. Tillagad med grön chili,
-ingefära, champinjoner och paprika i en kryddstark
-sås med rödvin.
-</p>
-																													<h3><strong>
-																															Sea
-																															Food
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>51A.
-																														Jhinga Masala
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p"> Tigerräkor marinerade i vitlök och ingefära
-tillagade med ägg i en kryddig gräddsås.
-
-																													</p>
-																													<p>52A.
-																														Jhinga Punjab 
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Tigerräkor med special nordindiska kryddor,
-ingefära och kikärtor. En traditionell rätt från Punjab
-																													</p>
-																													<p>53A.
-																														Jinga Balti
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Tigerräkor tillagade med lök, paprika, champinjoner,
-tomater och vitlök i rödvinssås.
-
-																													</p>
-																													<p>54A.
-																														 Jinga Korma (mild)
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Tigerräkor tillagade med nötter och grädde i currysås
-																													</p><p>55A.
-																														Fish Korma (mild)
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Laxfilè gryta med nötter och grädde i currysås
-																													</p><p>56A.
-																														Fish Balti
-																														<span
-																															class="price">139 SEK</span>
-																													</p>
-																													<p class="p">Laxfilé tillagad med lök, paprika, champinjoner,
-tomat och vitlök i rödvinssås.
-																													</p>
-																													<h3><strong>
-																															Vegetarian
-																															Dishes
-																															(Alla
-																															rätter
-																															serveras
-																															med
-																															ris)
-																														</strong>
-																													</h3>
-																													<p>61A.
-																														Palak
-																														Paneer
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Färsk hemlagad ost serverad i spenat med
- tomat, grön chili och färsk koriander.
-																													</p>
-																													<p>62A.
-																														Shahi Paneer
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Färsk hemlagad ost tillagad i krämig sås
- med kryddor, mandlar, cashewnätter och grädde
-																													</p>
-																													<p>63A.
-																														Panner Tikka masala (Mild)
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p"> Panner i serveras i krämig och kryddig sås.
-
-																													</p>
-																													<p>64A.
-																														Paneer Balti
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Färsk hemlagad ost tillagad med paprika,
- ingefära, tomat, champinjoner, grön chili och vitlök
- i en kryddstark sås med rödvin.
-
-																													</p>
-																													<p>65A.
-																														Aloo Gobhi
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Blomkål och potatis med lök, tomat, ingefära,
- grön chili, garam masala och färsk koriander
-																													</p>
-																													<p>66A.
-																														Mix Veg
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Grönsaksgryta med cashewnötter tillagad
- i kryddig currysås.
-
-																													</p>
-																													<p>67A.
-																														Chana Masala
-																														<span
-																															class="price">109 SEK</span>
-																													</p>
-																													<p class="p">Kikärtor tillagade i currysås med ingefära
- och garam masala.
-																													</p>
-																													<p>68A.
-																														Dal Makhni
-																														<span
-																															class="price">109 SEK</span>
-																													</p>
-																													<p class="p">Linser tillagade med ingefära, färsk koriander och
- garam Masala.
-																													</p><p>69A.
-																														ShaiKofta
-																														<span
-																															class="price">115 SEK</span>
-																													</p>
-																													<p class="p">Hemlagad färskost och blomkål i rullader.
-Tillagas med grädde,mandlar och cashewnötter i en
- krydding currygryta.
-
-																													</p>
-
-
-
-																													<h3><strong>Side
-																															Orders
-																														</strong>
-																													</h3>
-																													<p>71A.
-																														Raita
-																														<span
-																															class="price">15 SEK</span>
-																													</p>
-																													<p class="p"> Naturell yoghurt med gurka och tomater
-blandad med speciella kryddor.
-																													</p>
-																													<p>72A.
-																														Mango Chutney
-																														<span
-																															class="price">15 SEK</span>
-																													</p>
-																													<p class="p"> Sött kryddat mang fruktkött.
-																													</p>
-																													<p>73A.
-																														Papadum
-																														<span
-																															class="price">15 SEK</span>
-																													</p>
-																													<p class="p">3 st tunnbröd med kryddsmak.
-																														
-																													</p>
-																													<p>74A.
-																														Myntasås
-																														<span
-																															class="price">15 SEK</span>
-																													</p>
-																													<p class="p">Syrlig yoghurt med mynta.
-																														
-																													</p>
-																													<p>75A.
-																														Chilipiceles
-																														<span
-																															class="price">7 SEK</span>
-																													</p><p>76A.
-																														Extra rislåda Liten/Stor 
-																														<span
-																															class="price">15 SEK/25 SEK</span>
-																													</p><p>77A.
-																														Extra Kyckling/lamm/biff – Bit
-																														<span
-																															class="price">15 SEK</span>
-																													</p>
-																													<h3><strong>Indian
-																															Bread
-																														</strong>
-																													</h3>
-																													<p>81A.
-																														Plain
-																														Naan
-																														<span
-																															class="price">19 SEK</span>
-																													</p>
-																													<p class="p"> Nybakat
-																														mjukt
-																														Naanbröd.
-																													</p>
-																													<p>82A.
-																														Garlic
-																														Naan
-																														<span
-																															class="price">25 SEK</span>
-																													</p>
-																													<p class="p"> Nybakat mjukt vitlöksbröd och speciella kryddor.
-
-																													</p>
-																													<p>83A.
-																														Peshawri Naan (sött) 
-																														<span
-																															class="price">45 SEK</span>
-																													</p>
-																													<p class="p">Ett bröd fyllt med kokos, russin, socker, mandel,
-och cashewnötter.
-																													</p>
-																													<p>84A.
-																														Punjabi Naan
-																														<span
-																															class="price">45 SEK</span>
-																													</p>
-																													<p class="p"> Ett traditionellt bakat bröd fyllt med hemlagad paneer,
-potatis, koriander och speciella kryddor.
-
-																													</p>
-																													<p>85A.
-																														Cheese Naan
-																														<span
-																															class="price">35 SEK</span>
-																													</p>
-																													<p class="p"> Nybakat Naanbröd med ost och kryddor.
-
-																													</p>
-
-
-
-																													<h3><strong>Indian
-																															Cold
-																															Soft
-																															Drinks
-																														</strong>
-																													</h3>
-																													<p>130A.
-																														.
-																														Mango Lassi
-																														<span
-																															class="price">30 SEK</span>
-																													</p>
-																													<p class="p"> Yoghurt dryck med smak av mango och kardemumma
-																													</p>
-																												</div>
-																												</div>
-																												<br>
-					 <br>
-					 <hr style="height:2px;border-width:0;color:black;background-color:black">
-					   <div ><span class="p"><b>Stående alternativ:</b>&nbsp;</span>
-						  
-
-						   (109  SEK)<br
-						 class="mobilebreakspace"><b>Tandoori Chicken:</b>&nbsp;
-						
-						
-
-						 Marinerad kycklingsklubba med indiska kryddor, grillad i ugn.
- 
-					 </div>
-					 <div align="left"><b>Chicken Tikka Masala:</b>
-
-					   Marinerad och grillad kycklingsfilé, serveras i mild kryddig sås
-						 <br class="mobilebreakspace"><b>Palak Paneer (Veg):</b>
-						
-						 Hemlagad färsk ost serverad i spenat, tomater grön chili och färsk koriander
-					  </div>
-                  </div>
-                  <div class="tab-pane fade" id="kungsgatan" role="tabpanel" aria-labelledby="kungsgatan-tab">
-                    <div align="center"><br>
-                      <h2>Kungsgatan Take Away Meny</h2>
-                    </div>
-                    <div align="center">ÅNÄSVÄGEN 2, <br
-                        class="mobilebreakspace">416 67 GÖTEBORG
-                    </div>
-                    <div align="center">Ring 031-19 09 20 <i>eller
-                      </i><br class="mobilebreakspace"><a href="./order_online.html#kungsgatan"
-					  >beställ takeaway
-					  online...</a></div>
-					  <hr style="height:1px;border-width:0;color:black;background-color:black">
-
-					  <b>
-							<div align="center">Lunch 99 SEK inkl. Sallad, Nybakat nanbröd (95 SEK Vid Take away)<br
-							  class="mobilebreakspace">Extra nanbröd 10 SEK eller byt upp till Vitlöksnan för 19 SEK
-					  
-						  </div>
-						  <div align="center">Dricka (Flaska)19 SEK och Mangolassi 29 SEK
-							  <br class="mobilebreakspace">(Allt bröd är veganskt)
-						   </div></b>	
-						  <br>
-				<center>
-					  <input id="myInput3" type="text" placeholder="sökmeny...">
-</center>
-<br><br>
-<div id="myDIV3">
-                    <div class="tab_content_body_block elementor-text-editor elementor-clearfix">
-                      <h3><strong>Starters
-                        </strong>
-                      </h3>
-                      <p>1A.
-                        Samosa
-                        (Veg)
-                        <span class="price">45 SEK</span>
-                      </p>
-                      <p class="p">Indisk
-                        pirog
-                        med
-                        vegetarisk
-                        fyllning.
-                        Serveras
-                        med
-                        chutney.
-                      </p>
-                      <p>2A.
-                        Bhrwan
-                        Murgh
-                        <span class="price">45 SEK</span>
-                      </p>
-                      <p class="p">Marinerad
-                        kycklingfilé
-                        fylld
-                        med
-                        champinjoner,
-                        svartpeppar
-                        och
-                        hemlagad
-                        ost.
-                        Serveras
-                        med
-                        chutney.
-                      </p>
-                      <p>3A.
-                        Hariyali
-                        Jhinga
-                        <span class="price">55 SEK</span>
-                      </p>
-                      <p class="p">Tigerräkor
-                        marinerade
-                        med
-                        gröna
-                        örter
-                        och
-                        grillad.
-                        Serveras
-                        med
-                        paprikamasala.
-                      </p>
-                      <p>4A.
-                        3st
-                        Papadum
-                        <span class="price">25 SEK</span>
-                      </p>
-                      <p class="p">Tunnbröd
-                        med
-                        kryddsmak.
-                      </p>
-                      <h3><strong>Tandoori
-                          Dishes
-                          (Alla
-                          rätter
-                          serveras
-                          med
-                          ris)
-                        </strong>
-                      </h3>
-                      <p>11A.
-                        Tandoori
-                        Chicken
-                        <span class="price">125 SEK</span>
-                      </p>
-                      <p class="p">Grillad
-                        Kyckling
-                        marinerad
-                        i
-                        Indiska
-                        kryddor.
-                        Serveras
-                        med
-                        tandoorisås.
-                      </p>
-                      <p>12A.
-                        Murg
-                        Zaffrani
-                        Tikka
-                        <span class="price">125 SEK</span>
-                      </p>
-                      <p class="p">Kycklingfilé
-                        marinerad
-                        med
-                        yoghurt,
-                        grädde,
-                        cashewnötter,
-                        saffran
-                        och
-                        garam
-                        masala.
-                        Serveras
-                        med
-                        Tandoorisås.
-                      </p>
-                      <p>13A.
-                        Chaplikebab
-                        <span class="price">55 SEK</span>
-                      </p>
-                      <p class="p">Lammfärsbiffar
-                        med
-                        ingefära,
-                        koriander,
-                        grön
-                        chili
-                        och
-                        mangorelish.
-                        Serveras
-                        med
-                        masalasås.
-                      </p>
-                      <p>14A.
-                        Boti
-                        Kebab
-                        <span class="price">125 SEK</span>
-                      </p>
-                      <p class="p">Nötbitar
-                        marinerade
-                        med
-                        rostade
-                        kryddor,
-                        chili,
-                        lime
-                        och
-                        vitlök.
-                        Serveras
-                        med
-                        masalasås.
-                      </p>
-                      <p>15A.
-                        Malai
-                        Jhinga
-                        <span class="price">139 SEK</span>
-                      </p>
-                      <p class="p">Tigerräkor
-                        marinerade
-                        i
-                        yoghurt,
-                        rosvatten
-                        och
-                        cashewnötter.
-                        Serveras
-                        med
-                        tandoorisås.
-                      </p>
-                      <p>16A.
-                        Paneer
-                        Tikka
-                        <span class="price">139 SEK</span>
-                      </p>
-                      <p class="p">Marinerad
-                        hemlagad
-                        ost
-                        med
-                        indiska
-                        kryddor.
-                        Serveras
-                        med
-                        tandoorisås.
-                      </p>
-                      <h3><strong>Chicken
-                          Dishes
-                          (Alla
-                          rätter
-                          serveras
-                          med
-                          ris)
-                        </strong>
-                      </h3>
-                      <p>21A.
-                        Chicken
-                        Tikka
-                        Masala
-                        <span class="price">129 SEK</span>
-                      </p>
-                      <p class="p">Kryddmarinerad
-                        och
-                        grillad
-                        kycklingfilé.
-                      </p>
-                      <p class="p">Serveras
-                        i
-                        mild
-                        kryddig
-                        sås.
-                      </p>
-                      <p>22A.
-                        Madras
-                        Murghi
-                        <span class="price">129 SEK</span>
-                      </p>
-                      <p class="p">Sydindisk
-                        kycklinggryta
-                        i
-                        currysås,
-                        curryblad,
-                        senap
-                        och
-                        tamarind.
-                      </p>
-                      <p>23A.
-                        Murgh
-                        Korma
-                        <span class="price">129 SEK</span>
-                      </p>
-                      <p class="p">Kycklingfilé
-                        tillagad
-                        i
-                        kryddig
-                        gräddsås
-                        tillsammans
-                        med
-                        kokos,
-                        cashewnötter
-                        och
-                        kardemumma.
-                      </p>
-                      <p>24A.
-                        Butter
-                        Chicken
-                        <span class="price">129 SEK</span>
-                      </p>
-                      <p class="p">Grillad
-                        kycklingfilé
-                        tillagad
-                        med
-                        gräddsås
-                        och
-                        cashewnötter.
-                      </p>
-                      <p>25A.
-                        Vindaloo
-                        Murgh
-                        <span class="price">129 SEK</span>
-                      </p>
-                      <p class="p">Denna
-                        kycklinggryta
-                        har
-                        sina
-                        rötter
-                        i
-                        regionen
-                        Goa
-                        i
-                        Indien.
-                        Den
-                        tillagas
-                        bland
-                        annat
-                        med
-                        tomat,
-                        chili,
-                        rödvin,
-                        nejlikor
-                        och
-                        kanel.
-                      </p>
-                      <h3><strong>
-                          Lamb
-                          Dishes
-                          (Alla
-                          rätter
-                          serveras
-                          med
-                          ris)
-                        </strong>
-                      </h3>
-                      <p>31A.
-                        Rogan
-                        Josh
-                        <span class="price">139 SEK</span>
-                      </p>
-                      <p class="p"> Lamm
-                        tillagad
-                        i
-                        yoghurt,
-                        tomat
-                        och
-                        mandel.
-                        Rätten
-                        ör
-                        smaksatt
-                        med
-                        saffran
-                        och
-                        kardemumma.
-                      </p>
-                      <p>32A.
-                        Manglorian
-                        Lamb
-                        <span class="price">139 SEK</span>
-                      </p>
-                      <p class="p"> Sydindisk
-                        lammgryta
-                        med
-                        senap,
-                        svartpeppar,
-                        tamarind,
-                        chili
-                        och
-                        kokos.
-                      </p>
-                      <p>33A.
-                        Adraki
-                        Lambdo
-                        Pyaza
-                        <span class="price">139 SEK</span>
-                      </p>
-                      <p class="p">Munsbitar
-                        av
-                        lamm
-                        som
-                        fått
-                        sjuda
-                        i
-                        lök,
-                        ingefära,
-                        koriander,
-                        grön
-                        chili
-                        och
-                        lime.
-                      </p>
-                      <h3><strong>
-                          Beef
-                          Dishes
-                          (Alla
-                          rätter
-                          serveras
-                          med
-                          ris)
-                        </strong>
-                      </h3>
-                      <p>41A.
-                        Masala
-                        Gosht
-                        <span class="price">129 SEK</span>
-                      </p>
-                      <p class="p"> Biffbitar
-                        tillagade
-                        i
-                        en
-                        mustig
-                        sås
-                        med
-                        vitlök,tomat,
-                        lök,
-                        chili
-                        och
-                        garam
-                        masala.
-                      </p>
-                      <p>42A.
-                        Kadhai
-                        Gosht
-                        <span class="price">129 SEK</span>
-                      </p>
-                      <p class="p">Biffbitar
-                        tillagade
-                        med
-                        vårlök,
-                        tomat,
-                        paprika
-                        och
-                        kadhai
-                        masala.
-                      </p>
-                      <p>43A.
-                        Mughlai
-                        Gosht
-                        <span class="price">129 SEK</span>
-                      </p>
-                      <p class="p">Biffbitar
-                        tillagade
-                        på
-                        historiskt
-                        nordindiskt
-                        vis
-                        med
-                        cashewnötter,
-                        kardemumma
-                        och
-                        grön
-                        paprika.
-                      </p>
-                      <h3><strong>
-                          Sea
-                          Food
-                          (Alla
-                          rätter
-                          serveras
-                          med
-                          ris)
-                        </strong>
-                      </h3>
-                      <p>51A.
-                        Jhinga
-                        Malai
-                        Korma
-                        <span class="price">139 SEK</span>
-                      </p>
-                      <p class="p"> Tigerräkor
-                        tillagade
-                        i
-                        tomat,
-                        kokos
-                        och
-                        kardemumma.
-                      </p>
-                      <p>52A.
-                        Jhinga
-                        Jalfrezi
-                        <span class="price">139 SEK</span>
-                      </p>
-                      <p class="p">Tigerräkor
-                        tillagade
-                        i
-                        tomat,
-                        ingefära,
-                        koriander
-                        och
-                        lime.
-                      </p>
-                      <p>53A.
-                        Malwani
-                        Fish
-                        Curry
-                        <span class="price">139 SEK</span>
-                      </p>
-                      <p class="p">Laxgryta
-                        från
-                        västra
-                        Indien
-                        tillagad
-                        med
-                        vitlök,
-                        kokos,
-                        röd
-                        chili,
-                        nejlika,
-                        stjärnanis
-                        och
-                        kanel.
-                      </p>
-                      <h3><strong>
-                          Vegetarian
-                          Dishes
-                          (Alla
-                          rätter
-                          serveras
-                          med
-                          ris)
-                        </strong>
-                      </h3>
-                      <p>61A.
-                        Palak
-                        Paneer
-                        <span class="price">115 SEK</span>
-                      </p>
-                      <p class="p">Hemlagad
-                        färskost
-                        serverad
-                        i
-                        spenat
-                        med
-                        tomater,
-                        grön
-                        chili
-                        och
-                        färsk
-                        koriander.
-                      </p>
-                      <p>62A.
-                        Aloo
-                        Gobhi
-                        <span class="price">115 SEK</span>
-                      </p>
-                      <p class="p">Blomkål
-                        och
-                        potatis
-                        tillagad
-                        med
-                        tomat,
-                        ingefära,
-                        grön
-                        chili,
-                        garam
-                        masala
-                        och
-                        färsk
-                        koriander.
-                      </p>
-                      <p>63A.
-                        Navratan
-                        Korma
-                        <span class="price">115 SEK</span>
-                      </p>
-                      <p class="p"> Mustig
-                        grönsaksgryta
-                        med
-                        cashewnötter,
-                        russin
-                        och
-                        kokos
-                        smaksatt
-                        med
-                        garam
-                        masala.
-                      </p>
-                      <p>64A.
-                        Paneer
-                        Makhni
-                        <span class="price">115 SEK</span>
-                      </p>
-                      <p class="p">Hemlagad
-                        färskost
-                        tillagad
-                        i
-                        gräddsås
-                        med
-                        tomater.
-                      </p>
-                      <p>65A.
-                        Avial
-                        <span class="price">115 SEK</span>
-                      </p>
-                      <p class="p">Grönsaksgryta
-                        med
-                        yoghurt
-                        från
-                        Kerala
-                        med
-                        senap,
-                        curryblad,
-                        chili,
-                        koriander
-                        och
-                        kokos.
-                      </p>
-                      <p>66A.
-                        Malai
-                        Kofta
-                        <span class="price">115 SEK</span>
-                      </p>
-                      <p class="p">Färskostrullader
-                        med
-                        cashewnötter,
-                        sötmandel,
-                        fänkål,
-                        mynta,
-                        färsk
-                        koriander
-                        och
-                        kardemumma.
-                        Serveras
-                        i
-                        en
-                        krämig
-                        sås.
-                      </p>
-                      <p>67A.
-                        Dagens
-                        Daal
-                        <span class="price">115 SEK</span>
-                      </p>
-                      <p class="p">Dagens
-                        linsgryta.
-                      </p>
-
-
-
-                      <h3><strong>Side
-                          Orders
-                        </strong>
-                      </h3>
-                      <p>71A.
-                        Raita
-                        <span class="price">15 SEK</span>
-                      </p>
-                      <p class="p"> Yoghurt
-                        med
-                        gurka,
-                        tomater
-                        och
-                        speciella
-                        kryddor.
-                      </p>
-                      <p>72A.
-                        Mango
-                        Chutney
-                        <span class="price">15 SEK</span>
-                      </p>
-                      <p class="p"> Krossad
-                        mango
-                        smaksatt
-                        med
-                        indiska
-                        kryddor
-                      </p>
-                      <p>73A.
-                        Myntasås
-                        <span class="price">15 SEK</span>
-                      </p>
-                      <p>74A.
-                        Tamarind
-                        Chutney
-                        <span class="price">15 SEK</span>
-                      </p>
-                      <p class="p">Extra
-                        rislåda
-                        Liten/Stor
-                        <span class="price">15 SEK/25 SEK</span>
-                      </p>
-                      <p class="p">Extra
-                        Kyckling/lamm/biff
-                        –
-                        Bit
-                        <span class="price">15 SEK</span>
-                      </p>
-
-
-                      <h3><strong>Indian
-                          Bread
-                        </strong>
-                      </h3>
-                      <p>81A.
-                        Plain
-                        Naan
-                        <span class="price">19 SEK</span>
-                      </p>
-                      <p class="p"> Nybakat
-                        mjukt
-                        Naanbröd.
-                      </p>
-                      <p>82A.
-                        Garlic
-                        Naan
-                        <span class="price">25 SEK</span>
-                      </p>
-                      <p class="p"> Mjukt
-                        bröd
-                        bakat
-                        med
-                        vitlök,
-                        färsk
-                        koriander
-                        och
-                        speciella
-                        kryddor.
-                      </p>
-                      <p>83A.
-                        Peshawri
-                        Naan
-                        (sött)
-                        <span class="price">45 SEK</span>
-                      </p>
-                      <p class="p">Ett
-                        sött
-                        bröd
-                        fyllt
-                        med
-                        kokos,
-                        russin,
-                        socker,
-                        mandlar,
-                        pistasch
-                        och
-                        cashewnötter.
-                      </p>
-                      <p>84A.
-                        Chili
-                        Naan
-                        <span class="price">29 SEK</span>
-                      </p>
-                      <p class="p"> Naanbröd
-                        med
-                        chili
-                        och
-                        kryddor.
-                      </p>
-                      <p>85A.
-                        Cheese
-                        Naan
-                        <span class="price">35 SEK</span>
-                      </p>
-                      <p class="p"> Naanbröd
-                        med
-                        ost
-                        och
-                        kryddor.
-                      </p>
-
-
-
-                      <h3><strong>Indian
-                          Cold
-                          Soft
-                          Drinks
-                        </strong>
-                      </h3>
-                      <p>130A.
-                        .
-                        Lassi
-                        Mango
-                        <span class="price">30 SEK</span>
-                      </p>
-                      <p class="p"> Yoghurtdryck
-                        med
-                        mango
-                        och
-                        kardemumma.
-                      </p>
-                    </div>
+				<!-- AboutUs -->
+				<div class="row about_us py-5 d-flex justify-content-xs-center justify-content-md-end">
+					<div class="col-12 col-md-8 wow animate__animated animate__rubberBand">
+						<h3 class=""></h3>
 					</div>
-					<br>
-					 <br>
-					 <hr style="height:2px;border-width:0;color:black;background-color:black">
-					   <div ><span class="p"><b>Stående alternativ:</b>&nbsp;</span>
-						  
+					<div class="col-12 col-md-3  text-right wow animate__animated animate__zoomIn ">
+						<img class="img-responsive " src="assets/images/logo_footer.png" alt="tandoori logo" />
+					</div>
+				</div>
+				<div class="row about_us py-5 d-flex justify-content-xs-center justify-content-md-end">
+					<div class="col-12 col-md-8 wow animate__animated animate__rubberBand">
+						<div class="social">
+							<a href="./order_online.html">
+								<span class="font-weight-bold text-darkgoldenrod">Order Online &nbsp @ </span>
+								<img class="p-1"
+									src="https://lh3.googleusercontent.com/lANj2dwLChH-G6Z7BD4-BYN9I4Q9_dpiA3qDgGrXGkW-g0fn2uXZi0F8KN0fmnCO5qWG=s180-rw"
+									alt="Trulli" width="60" height="60" />
+								<img class="p-1"
+									src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/cheyenne/ubereats-logo-523d133d5056b36_523d146a-5056-b365-ab10961a0437ced8.png"
+									alt="Trulli" width="60" height="60" /></a>
+						</div>
+					</div>
+					<div class="col-12 col-md-3  text-right wow animate__animated animate__zoomIn ">
+						<div class="social text-center ">
+							<img class="p-1" src="assets/images/social_icon_youtube.png" alt="youtube" />
+							<img class="p-1" src="assets/images/social_icon_fb.png" alt="facebook" />
+							<img class="p-1" src="assets/images/social_icon_insta.png" alt="instagram" />
+							<img class="p-1" src="assets/images/social_icon_twitter.png" alt="twitter" />
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-between">
+					<div class=" col-12 text-center ">
+						<p>POWERED BY<a class="font-weight-bold text-darkgoldenrod" href="http://sscreativelabs.com/">
+								SUNSHINE
+								CREATIVE LABS</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 
-						   (109  SEK)<br
-						 class="mobilebreakspace"><b>Tandoori Chicken:</b>&nbsp;
-						
-						
-
-						 Marinerad kycklingsklubba med indiska kryddor, grillad i ugn.
- 
-					 </div>
-					 <div align="left"><b>Chicken Tikka Masala:</b>
-
-					   Marinerad och grillad kycklingsfilé, serveras i mild kryddig sås
-						 <br class="mobilebreakspace"><b>Palak Paneer (Veg):</b>
-						
-						 Hemlagad färsk ost serverad i spenat, tomater grön chili och färsk koriander
-					  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </main>
-
-      <!-- Footer -->
-    <footer class="row footer text-light py-3 justify-content-center">
-      <div class="col-10">
-
-        <!-- AboutUs -->
-        <div class="row about_us py-5 d-flex justify-content-xs-center justify-content-md-end">
-          <div class="col-12 col-md-8 wow animate__animated animate__rubberBand">
-            <h3 class=""></h3>
-          </div>
-          <div class="col-12 col-md-3  text-right wow animate__animated animate__zoomIn ">
-            <img class="img-responsive " src="assets/images/logo_footer.png" alt="tandoori logo" />
-          </div>
-        </div>
-        <div class="row about_us py-5 d-flex justify-content-xs-center justify-content-md-end">
-          <div class="col-12 col-md-8 wow animate__animated animate__rubberBand">
-            <div class="social">
-				<a href="./order_online.html">
-				<span class="font-weight-bold text-darkgoldenrod">Order Online &nbsp @ </span>
-				<img class="p-1" src="https://lh3.googleusercontent.com/lANj2dwLChH-G6Z7BD4-BYN9I4Q9_dpiA3qDgGrXGkW-g0fn2uXZi0F8KN0fmnCO5qWG=s180-rw" alt="Trulli" width="60" height="60"/>
-				<img class="p-1" src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/cheyenne/ubereats-logo-523d133d5056b36_523d146a-5056-b365-ab10961a0437ced8.png" alt="Trulli"
-							  width="60" height="60"/></a>
-			  </div>
-          </div>
-          <div class="col-12 col-md-3  text-right wow animate__animated animate__zoomIn ">
-            <div class="social text-center ">
-              <img class="p-1" src="assets/images/social_icon_youtube.png" alt="youtube" />
-              <img class="p-1" src="assets/images/social_icon_fb.png" alt="facebook" />
-              <img class="p-1" src="assets/images/social_icon_insta.png" alt="instagram" />
-              <img class="p-1" src="assets/images/social_icon_twitter.png" alt="twitter" />
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-between">
-          <div class=" col-12 text-center ">
-            <p>POWERED BY<a class="font-weight-bold text-darkgoldenrod" href="http://sscreativelabs.com/"> SUNSHINE
-                CREATIVE LABS</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="./assets/js/wow.js"></script>
-  <script src="./assets/js/custom.js"></script>
-  <script>
-    new WOW().init();
-  </script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="./assets/js/wow.js"></script>
+	<script src="./assets/js/custom.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 
 </html>
