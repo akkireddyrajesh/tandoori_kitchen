@@ -1,8 +1,20 @@
 $('document').ready(function () {
     const current_path = window.location.pathname.split('/').pop();
     const getBranchID = window.location.hash;
+    /**
+     * To Active current page button
+     */
     activeMenuLi(current_path);
+
+    /**
+     * To Active Selected Branch
+     */
     activaTab(getBranchID);
+    $('.dropdown-item').click(function(e){
+        var addressValue = '#'+$(this).attr("href").split('#').pop();
+        console.log(`$(this).value()`, addressValue);
+        activaTab(addressValue);
+    });
 });
 
 function activaTab(branchId) {
